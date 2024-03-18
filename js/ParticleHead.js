@@ -39,7 +39,7 @@ Background.headparticle = function() {
    var p_geom = new THREE.Geometry();
    var p_material = new THREE.ParticleBasicMaterial({
       // color: 0xD6D9E1,
-      color: "grey",
+      color: "#bec2c1",
       size: 1.5
    });
 
