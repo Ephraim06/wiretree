@@ -1,1199 +1,983 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="author" content="Untree.co" />
-    <link rel="shortcut icon" href="favicon.png" />
+<html class="no-js" lang="en">
 
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+<head>
+  <!--- basic page needs
+    ================================================== -->
+  <meta charset="utf-8" />
+  <title>WireTree | Digital</title>
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,900"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+  <!-- mobile specific metas
+    ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/jquery-ui.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <!-- CSS
+    ================================================== -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
 
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+  <!-- script
+    ================================================== -->
+  <script src="js/modernizr.js"></script>
+  <script src="js/pace.min.js"></script>
 
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+  <!-- favicons
+    ================================================== -->
+  <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/00c02a5085.js" crossorigin="anonymous"></script>
+</head>
 
-    <link rel="stylesheet" href="css/aos.css" />
-
-    <link rel="stylesheet" href="css/style.css" />
-    <title>WireTree | Digital</title>
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    <div class="site-wrap">
-      <div class="site-mobile-menu site-navbar-target">
-        <div class="site-mobile-menu-header">
-          <div class="site-mobile-menu-close mt-3">
-            <span class="icon-close2 js-menu-toggle"></span>
-          </div>
-        </div>
-        <div class="site-mobile-menu-body"></div>
-      </div>
-
-      <div class="top-bar py-2" id="home-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 text-center text-lg-right order-lg-2">
-              <ul class="social-media m-0 p-0">
-                <li>
-                  <a href="#" class="p-2"
-                    ><span class="icon-facebook"></span
-                  ></a>
-                </li>
-                <li>
-                  <a href="#" class="p-2"><span class="icon-twitter"></span></a>
-                </li>
-                <li>
-                  <a href="#" class="p-2"
-                    ><span class="icon-instagram"></span
-                  ></a>
-                </li>
-                <li>
-                  <a href="#" class="p-2"
-                    ><span class="icon-linkedin"></span
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-6 text-center text-lg-left order-lg-1">
-              <p class="mb-0 d-inline-flex">
-                <span class="mr-3"
-                  ><a href="tel://#" class="d-flex align-items-center"
-                    ><span class="icon-phone mr-2"></span
-                    ><span>+27 (0)61 585 1410</span></a
-                  ></span
-                >
-                <span
-                  ><a href="tel://#" class="d-flex align-items-center"
-                    ><span class="icon-envelope mr-2"></span
-                    ><span>info@wiretree.com</span></a
-                  ></span
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <header
-        class="site-navbar py-4 js-sticky-header site-navbar-target"
-        role="banner">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-11 col-xl-2">
-              <h1 class="mb-0 site-logo">
-                <a href="index.html" class="mb-0">
-                  <img
-                    src="images/logos/wiretree-nobg.png"
-                    width="200px"
-                    alt="" />
-                  <!-- WireTree<span class="text-primary">.</span> -->
-                </a>
-              </h1>
-            </div>
-            <div class="col-12 col-md-10 d-none d-xl-block">
-              <nav
-                class="site-navigation position-relative text-right"
-                role="navigation">
-                <ul
-                  class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                  <li><a href="#home-section" class="nav-link">Home</a></li>
-                  <li><a href="#work-section" class="nav-link">Work</a></li>
-                  <li>
-                    <a href="#services-section" class="nav-link">Services</a>
-                  </li>
-                  <li class="has-children">
-                    <a href="#about-section" class="nav-link">About</a>
-                    <ul class="dropdown">
-                      <li><a href="#about-section">Specialties</a></li>
-                      <li><a href="#team-section">Our Team</a></li>
-                    </ul>
-                  </li>
-                  <!-- <li><a href="#blog-section" class="nav-link">Blog</a></li> -->
-                  <li>
-                    <a href="#contact-section" class="nav-link">Contact</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-
-            <div
-              class="d-inline-block d-xl-none ml-md-0 mr-auto py-3"
-              style="position: relative; top: 3px">
-              <a href="#" class="site-menu-toggle js-menu-toggle text-black"
-                ><span class="icon-menu h3"></span
-              ></a>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      <div class="particlehead"></div>
-      <!-- <div class="container"> -->
-      <div class="site-blocks-cover">
-        <div class="container">
-          <div
-            class="row align-items-center justify-content-center text-center">
-            <div class="col-md-12" data-aos="fade-up" data-aos-delay="400">
-              <div class="row justify-content-center mb-4">
-                <div class="col-md-10 text-center">
-                  <h1>WIRETREE <span class="typed-words"></span></h1>
-                  <p class="lead mb-5">
-                    You dream it, we make it.
-                    <a href="#">WIRETREE</a>
-                  </p>
-                  <div>
-                    <a
-                      data-fancybox
-                      data-ratio="2"
-                      href="https://vimeo.com/317571768"
-                      class="btn btn-primary btn-md"
-                      >Enquire</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- </div> -->
-
-      <!-- <section class="site-section">
-        <div class="container">
-          <div class="row">
-            <div class="col" data-aos="fade-in" data-aos-delay="0">
-              <img src="images/clients-05.svg" alt="Image" class="img-fluid" />
-            </div>
-            <div class="col" data-aos="fade-in" data-aos-delay="100">
-              <img src="images/clients-02.svg" alt="Image" class="img-fluid" />
-            </div>
-            <div class="col" data-aos="fade-in" data-aos-delay="200">
-              <img src="images/clients-03.svg" alt="Image" class="img-fluid" />
-            </div>
-            <div class="col" data-aos="fade-in" data-aos-delay="300">
-              <img src="images/clients-01.svg" alt="Image" class="img-fluid" />
-            </div>
-            <div class="col" data-aos="fade-in" data-aos-delay="400">
-              <img src="images/clients-04.svg" alt="Image" class="img-fluid" />
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <section class="site-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-lg-4 mb-lg-0 mb-4">
-              <div class="box-with-humber bg-white p-5">
-                <span
-                  class="icon icon-format_paint mr-2 text-primary h3 mb-3 d-block"></span>
-                <h2 class="text-primary">Brand Strategy</h2>
-                <p class="mb-4">
-                  At WIRE TREE, we're all about bringing websites to life! We're
-                  a dedicated digital studio fueled by our love for design and
-                  development.
-                </p>
-                <ul class="list-unstyled ul-check primary">
-                  <li>Customer Experience</li>
-                  <li>Product Management</li>
-                  <li>Proof of Concept</li>
-                </ul>
-              </div>
-            </div>
-
-            <div
-              class="col-md-6 col-lg-4 mb-lg-0 mb-4"
-              data-jarallax-element="-50">
-              <div class="box-with-humber bg-white p-5">
-                <span
-                  class="icon icon-palette mr-2 text-primary h3 mb-3 d-block"></span>
-
-                <h2 class="text-primary">Visual Identity</h2>
-                <p class="mb-4">
-                  Teaming up with local brands, we create cutting-edge design
-                  solutions that not only enhance their online presence but also
-                  drive their long-term success. With our broad industry
-                  expertise, we've had the pleasure of working with clients from
-                  diverse backgrounds and locations.
-                </p>
-                <ul class="list-unstyled ul-check primary">
-                  <li>Web Design</li>
-                  <li>Branding</li>
-                  <li>Web &amp; App Development</li>
-                </ul>
-              </div>
-            </div>
-
-            <div
-              class="col-md-6 col-lg-4 mb-lg-0 mb-4"
-              data-jarallax-element="20">
-              <div class="box-with-humber bg-white p-5">
-                <span
-                  class="icon icon-laptop2 mr-2 text-primary h3 mb-3 d-block"></span>
-
-                <h2 class="text-primary">Web Design</h2>
-                <p class="mb-4">
-                  At Wiretree, we design websites for startups and beyond.
-                  Contact us to begin your online journey!
-                </p>
-                <ul class="list-unstyled ul-check primary">
-                  <li>Social Media</li>
-                  <li>Paid Campaigns</li>
-                  <li>Marketing &amp; SEO</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="site-section">
-        <div class="container">
-          <div class="row align-items-center justify-content-around">
-            <div class="col-lg-5" data-jarallax-element="-50">
-              <h2 class="text-primary">Web Design</h2>
-              <p class="mb-4">
-                At Wiretree, we specialize in crafting websites tailored to your
-                unique needs. Whether you're a small startup or a growing
-                business, our team is here to transform your vision into a
-                stunning online presence. Let's bring your ideas to life!
-              </p>
-              <ul class="list-unstyled ul-check primary">
-                <li>Social Media</li>
-                <li>Paid Campaigns</li>
-                <li>Marketing &amp; SEO</li>
-              </ul>
-            </div>
-
-            <div class="col-lg-6" data-jarallax-element="50">
-              <img
-                src="https://images.pexels.com/photos/1151418/pexels-photo-1151418.jpeg"
-                alt="Image"
-                class="img-fluid" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="site-section" id="work-section">
-        <div class="container">
-          <div class="row mb-5 justify-content-center">
-            <div class="col-md-8 text-center">
-              <h2 class="site-section-heading text-center">Our Works</h2>
-              <p class="lead">
-                We're like a cozy team of graphic and web designers, wrapped in
-                years of experience and warmth. Let's snug up and collaborate to
-                showcase your brand to the world. Our joy? Celebrating your
-                success. We'll craft your vision with care and snug attention to
-                detail.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-6 col-lg-4">
-              <a
-                href="images/our-work/kdv.JPG"
-                class="media-1"
-                data-fancybox="gallery"
-                data-caption="www.kingdavidview.co.za">
-                <img
-                  src="images/our-work/kdv.JPG"
-                  alt="Image"
-                  class="img-fluid" />
-                <div class="media-1-content">
-                  <h2>King David View</h2>
-                  <span class="category">Website</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <a
-                href="images/our-work/awv.jpg"
-                class="media-1"
-                data-fancybox="gallery"
-                data-caption="www.albuswavesidevilla.co.za">
-                <img
-                  src="images/our-work/awv.jpg"
-                  alt="Image"
-                  class="img-fluid" />
-                <div class="media-1-content">
-                  <h2>Albus Waveside Villa</h2>
-                  <span class="category">Website</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <a
-                href="images/our-work/beiramar.png"
-                class="media-1"
-                data-fancybox="gallery"
-                data-caption="www.beiramar.co.za">
-                <img
-                  src="images/our-work/beiramar.png"
-                  alt="Image"
-                  class="img-fluid" />
-                <div class="media-1-content">
-                  <h2>BEIRAMAR Apartments</h2>
-                  <span class="category">Website</span>
-                </div>
-              </a>
-            </div>
-
-            <!-- <div class="col-md-6 col-lg-4">
-              <a
-                href="images/img_4.jpg"
-                class="media-1"
-                data-fancybox="gallery">
-                <img src="images/img_4.jpg" alt="Image" class="img-fluid" />
-                <div class="media-1-content">
-                  <h2>Tall Chair</h2>
-                  <span class="category">Web Application</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <a
-                href="images/img_5.jpg"
-                class="media-1"
-                data-fancybox="gallery">
-                <img src="images/img_5.jpg" alt="Image" class="img-fluid" />
-                <div class="media-1-content">
-                  <h2>Drone</h2>
-                  <span class="category">Branding</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <a
-                href="images/img_6.jpg"
-                class="media-1"
-                data-fancybox="gallery">
-                <img src="images/img_6.jpg" alt="Image" class="img-fluid" />
-                <div class="media-1-content">
-                  <h2>Architect</h2>
-                  <span class="category">Website</span>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-              <a
-                href="images/img_7.jpg"
-                class="media-1"
-                data-fancybox="gallery">
-                <img src="images/img_7.jpg" alt="Image" class="img-fluid" />
-                <div class="media-1-content">
-                  <h2>Flower</h2>
-                  <span class="category">Web Application</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <a
-                href="images/img_8.jpg"
-                class="media-1"
-                data-fancybox="gallery">
-                <img src="images/img_8.jpg" alt="Image" class="img-fluid" />
-                <div class="media-1-content">
-                  <h2>Headset</h2>
-                  <span class="category">Branding</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <a
-                href="images/img_9.jpg"
-                class="media-1"
-                data-fancybox="gallery">
-                <img src="images/img_9.jpg" alt="Image" class="img-fluid" />
-                <div class="media-1-content">
-                  <h2>Amazon Speaker</h2>
-                  <span class="category">Website</span>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-              <a
-                href="images/img_10.jpg"
-                class="media-1"
-                data-fancybox="gallery">
-                <img src="images/img_10.jpg" alt="Image" class="img-fluid" />
-                <div class="media-1-content">
-                  <h2>Battle Creek</h2>
-                  <span class="category">Web Application</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <a
-                href="images/img_11.jpg"
-                class="media-1"
-                data-fancybox="gallery">
-                <img src="images/img_11.jpg" alt="Image" class="img-fluid" />
-                <div class="media-1-content">
-                  <h2>Nouri</h2>
-                  <span class="category">Branding</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <a
-                href="images/img_12.jpg"
-                class="media-1"
-                data-fancybox="gallery">
-                <img src="images/img_12.jpg" alt="Image" class="img-fluid" />
-                <div class="media-1-content">
-                  <h2>Fiber Cloth</h2>
-                  <span class="category">Website</span>
-                </div>
-              </a>
-            </div> -->
-          </div>
-        </div>
-      </section>
-
-      <!-- <section class="section ft-feature-1">
-        <div class="container">
-          <div class="row align-items-stretch">
-            <div class="col-12 w-100 ft-feature-1-content">
-              <div class="row align-items-center">
-                <div class="col-lg-5" data-jarallax-element="50">
-                  <img
-                    src="images/img_13.jpg"
-                    alt="Image"
-                    class="img-fluid mb-4 mb-lg-0" />
-                </div>
-                <div class="col-lg-3 ml-auto" data-jarallax-element="-50">
-                  <div class="mb-5">
-                    <h3 class="d-flex align-items-center">
-                      <span class="icon icon-beach_access mr-2"></span
-                      ><span>Strategy</span>
-                    </h3>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Cumque ab nihil quam nesciunt.
-                    </p>
-                    <p><a href="#">Read More</a></p>
-                  </div>
-
-                  <div>
-                    <h3 class="d-flex align-items-center">
-                      <span class="icon icon-build mr-2"></span
-                      ><span>Web Development</span>
-                    </h3>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Cumque ab nihil quam nesciunt.
-                    </p>
-                    <p><a href="#">Read More</a></p>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="mb-5">
-                    <h3 class="d-flex align-items-center">
-                      <span class="icon icon-format_paint mr-2"></span
-                      ><span>Art Direction</span>
-                    </h3>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Cumque ab nihil quam nesciunt.
-                    </p>
-                    <p><a href="#">Read More</a></p>
-                  </div>
-
-                  <div>
-                    <h3 class="d-flex align-items-center">
-                      <span class="icon icon-question_answer mr-2"></span
-                      ><span>Copywriting</span>
-                    </h3>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Cumque ab nihil quam nesciunt.
-                    </p>
-                    <p><a href="#">Read More</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- <section class="site-section testimonial-wrap">
-        <div class="container mb-5">
-          <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-              <h2 class="site-section-heading text-center">Testimonials</h2>
-            </div>
-          </div>
-        </div>
-        <div class="slide-one-item home-slider owl-carousel">
-          <div>
-            <div class="testimonial">
-              <blockquote class="mb-5">
-                <p>
-                  &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Consectetur unde reprehenderit aperiam quaerat fugiat
-                  repudiandae explicabo animi minima fuga beatae illum eligendi
-                  incidunt consequatur. Amet dolores excepturi earum unde
-                  iusto.&rdquo;
-                </p>
-              </blockquote>
-
-              <figure
-                class="mb-4 d-block align-items-center justify-content-center">
-                <div>
-                  <img
-                    src="images/person_3.jpg"
-                    alt="Image"
-                    class="w-50 img-fluid mb-3" />
-                </div>
-                <p>John Smith</p>
-              </figure>
-            </div>
-          </div>
-          <div>
-            <div class="testimonial">
-              <blockquote class="mb-5">
-                <p>
-                  &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Consectetur unde reprehenderit aperiam quaerat fugiat
-                  repudiandae explicabo animi minima fuga beatae illum eligendi
-                  incidunt consequatur. Amet dolores excepturi earum unde
-                  iusto.&rdquo;
-                </p>
-              </blockquote>
-              <figure
-                class="mb-4 d-block align-items-center justify-content-center">
-                <div>
-                  <img
-                    src="images/person_2.jpg"
-                    alt="Image"
-                    class="w-50 img-fluid mb-3" />
-                </div>
-                <p>Christine Aguilar</p>
-              </figure>
-            </div>
-          </div>
-
-          <div>
-            <div class="testimonial">
-              <blockquote class="mb-5">
-                <p>
-                  &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Consectetur unde reprehenderit aperiam quaerat fugiat
-                  repudiandae explicabo animi minima fuga beatae illum eligendi
-                  incidunt consequatur. Amet dolores excepturi earum unde
-                  iusto.&rdquo;
-                </p>
-              </blockquote>
-              <figure
-                class="mb-4 d-block align-items-center justify-content-center">
-                <div>
-                  <img
-                    src="images/person_4.jpg"
-                    alt="Image"
-                    class="w-50 img-fluid mb-3" />
-                </div>
-                <p>Robert Spears</p>
-              </figure>
-            </div>
-          </div>
-
-          <div>
-            <div class="testimonial">
-              <blockquote class="mb-5">
-                <p>
-                  &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Consectetur unde reprehenderit aperiam quaerat fugiat
-                  repudiandae explicabo animi minima fuga beatae illum eligendi
-                  incidunt consequatur. Amet dolores excepturi earum unde
-                  iusto.&rdquo;
-                </p>
-              </blockquote>
-              <figure
-                class="mb-4 d-block align-items-center justify-content-center">
-                <div>
-                  <img
-                    src="images/person_5.jpg"
-                    alt="Image"
-                    class="w-50 img-fluid mb-3" />
-                </div>
-                <p>Bruce Rogers</p>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <section class="site-section border-bottom" id="services-section">
-        <div class="container">
-          <div class="row justify-content-center mb-5">
-            <div class="col-md-8 text-center" data-aos="fade-up">
-              <h2 class="site-section-heading text-center">Our Services</h2>
-            </div>
-          </div>
-          <div class="row align-items-stretch">
-            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
-              <div class="unit-4 d-flex">
-                <div class="unit-4-icon mr-4">
-                  <span class="text-primary icon-laptop2"></span>
-                </div>
-                <div>
-                  <h3>Web Design</h3>
-                  <p>
-                    Drive the right audience to your content. Optimise your
-                    website with mobile-friendly design for the best user
-                    experience and SEO results.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-md-6 col-lg-4 mb-4 mb-lg-4"
-              data-aos="fade-up"
-              data-aos-delay="100">
-              <div class="unit-4 d-flex">
-                <div class="unit-4-icon mr-4">
-                  <span class="text-primary icon-shopping_cart"></span>
-                </div>
-                <div>
-                  <h3>Web Development</h3>
-                  <p>
-                    Custom Web development that meets your website expectations.
-                    Responsive design that adapts for optimised mobile display.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-md-6 col-lg-4 mb-4 mb-lg-4"
-              data-aos="fade-up"
-              data-aos-delay="200">
-              <div class="unit-4 d-flex">
-                <div class="unit-4-icon mr-4">
-                  <span class="text-primary icon-question_answer"></span>
-                </div>
-                <div>
-                  <h3>Logo Design</h3>
-                  <p>
-                    Creative brand identity design to get your company to stand
-                    out from your competitors. We look forward to creating your
-                    unique logo!
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- <div
-              class="col-md-6 col-lg-4 mb-4 mb-lg-4"
-              data-aos="fade-up"
-              data-aos-delay="300">
-              <div class="unit-4 d-flex">
-                <div class="unit-4-icon mr-4">
-                  <span class="text-primary icon-format_paint"></span>
-                </div>
-                <div>
-                  <h3>Logo Design</h3>
-                  <p>
-                    Creative brand identity design to get your company to stand
-                    out from your competitors. We look forward to creating your
-                    unique logo!
-                  </p>
-                  <p><a href="#">Learn More</a></p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-md-6 col-lg-4 mb-4 mb-lg-4"
-              data-aos="fade-up"
-              data-aos-delay="400">
-              <div class="unit-4 d-flex">
-                <div class="unit-4-icon mr-4">
-                  <span class="text-primary icon-extension"></span>
-                </div>
-                <div>
-                  <h3>Copy Writing</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Perferendis quis molestiae vitae eligendi at.
-                  </p>
-                  <p><a href="#">Learn More</a></p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-md-6 col-lg-4 mb-4 mb-lg-4"
-              data-aos="fade-up"
-              data-aos-delay="500">
-              <div class="unit-4 d-flex">
-                <div class="unit-4-icon mr-4">
-                  <span class="text-primary icon-phonelink"></span>
-                </div>
-                <div>
-                  <h3>Mobile Applications</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Perferendis quis molestiae vitae eligendi at.
-                  </p>
-                  <p><a href="#">Learn More</a></p>
-                </div>
-              </div>
-            </div> -->
-          </div>
-        </div>
-      </section>
-
-      <div class="site-section" id="about-section">
-        <div class="container">
-          <div class="row mb-5">
-            <div
-              class="col-md-5 ml-auto mb-5 order-md-2"
-              data-jarallax-element="50">
-              <img
-                src="https://images.pexels.com/photos/1251862/pexels-photo-1251862.jpeg"
-                alt="Image"
-                class="img-fluid rounded" />
-            </div>
-            <div class="col-md-6 order-md-1" data-jarallax-element="-50">
-              <div class="row">
-                <div class="col-12">
-                  <div class="text-left pb-1">
-                    <h2 class="site-section-heading">About Us</h2>
-                  </div>
-                </div>
-                <div class="col-12 mb-4">
-                  <p class="lead">
-                    Our foundation is built on passion, fueled by the desire to
-                    achieve greatness for our clients. We find immense
-                    satisfaction in bringing visions to life on the web. As
-                    businesses pivot towards the online market, we offer
-                    affordable solutions with seamless execution, ensuring
-                    hassle-free experiences.
-                  </p>
-                  <!-- <p class="lead">
-                    We thrive on excellence, prioritizing client satisfaction
-                    and punctuality. Rest assured, we'll exceed expectations and
-                    deliver outstanding results, every time.
-                  </p> -->
-                </div>
-                <div class="col-md-12 mb-md-5 mb-0 col-lg-6">
-                  <div class="unit-4">
-                    <div class="unit-4-icon mr-4 mb-3">
-                      <span class="text-primary icon-phonelink"></span>
-                    </div>
-                    <div>
-                      <h3>Web &amp; Mobile Specialties</h3>
-                      <p>
-                        We excel in creating top-notch experiences for web and
-                        mobile. From dynamic websites to user-friendly
-                        interfaces, we specialize in crafting solutions that
-                        engage and deliver.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-12 mb-md-5 mb-0 col-lg-6">
-                  <div class="unit-4">
-                    <div class="unit-4-icon mr-4 mb-3">
-                      <span class="text-primary icon-extension"></span>
-                    </div>
-                    <div>
-                      <h3>Intuitive Thinkers</h3>
-                      <p>
-                        With intuitive thinking, we tackle projects creatively
-                        and effectively. Understanding challenges deeply, we
-                        innovate solutions that surpass expectations and
-                        resonate with audiences.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- <div class="site-section border-bottom" id="team-section">
-        <div class="container">
-          <div class="row justify-content-center mb-5">
-            <div class="col-md-7 text-center">
-              <h2 class="site-section-heading">Our Team</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div
-              class="col-md-6 col-lg-4 mb-5 mb-lg-0"
-              data-aos="fade"
-              data-aos-delay="100">
-              <div class="person text-center bg-white p-4">
-                <img
-                  src="images/person_2.jpg"
-                  alt="Image"
-                  class="img-fluid rounded-circle mb-3" />
-                <h3>John Rooster</h3>
-                <p class="position text-muted">Co-Founder, President</p>
-                <p class="mb-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                  at consequatur unde molestiae quidem provident voluptatum
-                  deleniti quo iste error eos est praesentium distinctio
-                  cupiditate tempore suscipit inventore deserunt tenetur.
-                </p>
-                <ul class="ul-social-circle">
-                  <li>
-                    <a href="#"><span class="icon-facebook"></span></a>
-                  </li>
-                  <li>
-                    <a href="#"><span class="icon-twitter"></span></a>
-                  </li>
-                  <li>
-                    <a href="#"><span class="icon-linkedin"></span></a>
-                  </li>
-                  <li>
-                    <a href="#"><span class="icon-instagram"></span></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              class="col-md-6 col-lg-4 mb-5 mb-lg-0"
-              data-aos="fade"
-              data-aos-delay="200">
-              <div class="person text-center bg-white p-4">
-                <img
-                  src="images/person_3.jpg"
-                  alt="Image"
-                  class="img-fluid rounded-circle mb-3" />
-                <h3>Tom Sharp</h3>
-                <p class="position text-muted">Co-Founder, COO</p>
-                <p class="mb-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                  at consequatur unde molestiae quidem provident voluptatum
-                  deleniti quo iste error eos est praesentium distinctio
-                  cupiditate tempore suscipit inventore deserunt tenetur.
-                </p>
-                <ul class="ul-social-circle">
-                  <li>
-                    <a href="#"><span class="icon-facebook"></span></a>
-                  </li>
-                  <li>
-                    <a href="#"><span class="icon-twitter"></span></a>
-                  </li>
-                  <li>
-                    <a href="#"><span class="icon-linkedin"></span></a>
-                  </li>
-                  <li>
-                    <a href="#"><span class="icon-instagram"></span></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              class="col-md-6 col-lg-4 mb-5 mb-lg-0"
-              data-aos="fade"
-              data-aos-delay="300">
-              <div class="person text-center bg-white p-4">
-                <img
-                  src="images/person_4.jpg"
-                  alt="Image"
-                  class="img-fluid rounded-circle mb-3" />
-                <h3>Winston Hodson</h3>
-                <p class="position text-muted">Marketing</p>
-                <p class="mb-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                  at consequatur unde molestiae quidem provident voluptatum
-                  deleniti quo iste error eos est praesentium distinctio
-                  cupiditate tempore suscipit inventore deserunt tenetur.
-                </p>
-                <ul class="ul-social-circle">
-                  <li>
-                    <a href="#"><span class="icon-facebook"></span></a>
-                  </li>
-                  <li>
-                    <a href="#"><span class="icon-twitter"></span></a>
-                  </li>
-                  <li>
-                    <a href="#"><span class="icon-linkedin"></span></a>
-                  </li>
-                  <li>
-                    <a href="#"><span class="icon-instagram"></span></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-      <!-- <section class="site-section" id="blog-section">
-        <div class="container">
-          <div class="row justify-content-center mb-5">
-            <div class="col-md-8 text-center">
-              <h2 class="site-section-heading text-center">Blog</h2>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-              <div class="h-entry">
-                <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
-                <h2 class="font-size-regular">
-                  <a href="#">Create Beautiful Website In Less Than An Hour</a>
-                </h2>
-                <div class="meta mb-4">
-                  Ham Brook <span class="mx-2">&bullet;</span> Jan 18, 2019<span
-                    class="mx-2"
-                    >&bullet;</span
-                  >
-                  <a href="#">News</a>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                  eligendi nobis ea maiores sapiente veritatis reprehenderit
-                  suscipit quaerat rerum voluptatibus a eius.
-                </p>
-                <p><a href="#">Continue Reading...</a></p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-              <div class="h-entry">
-                <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
-                <h2 class="font-size-regular">
-                  <a href="#">Create Beautiful Website In Less Than An Hour</a>
-                </h2>
-                <div class="meta mb-4">
-                  James Phelps <span class="mx-2">&bullet;</span> Jan 18,
-                  2019<span class="mx-2">&bullet;</span> <a href="#">News</a>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                  eligendi nobis ea maiores sapiente veritatis reprehenderit
-                  suscipit quaerat rerum voluptatibus a eius.
-                </p>
-                <p><a href="#">Continue Reading...</a></p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-              <div class="h-entry">
-                <img src="images/img_3.jpg" alt="Image" class="img-fluid" />
-                <h2 class="font-size-regular">
-                  <a href="#">Create Beautiful Website In Less Than An Hour</a>
-                </h2>
-                <div class="meta mb-4">
-                  James Phelps <span class="mx-2">&bullet;</span> Jan 18,
-                  2019<span class="mx-2">&bullet;</span> <a href="#">News</a>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                  eligendi nobis ea maiores sapiente veritatis reprehenderit
-                  suscipit quaerat rerum voluptatibus a eius.
-                </p>
-                <p><a href="#">Continue Reading...</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <section class="site-section" id="contact-section">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-12 text-center">
-              <h2 class="site-section-heading">Contact Us</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 mb-5">
-              <form action="#" class="p-5 bg-white">
-                <h2 class="h4 mb-5">Contact Form</h2>
-
-                <div class="row form-group">
-                  <div class="col-md-6 mb-3 mb-md-0">
-                    <label class="text-black" for="fname">First Name</label>
-                    <input type="text" id="fname" class="form-control" />
-                  </div>
-                  <div class="col-md-6">
-                    <label class="text-black" for="lname">Last Name</label>
-                    <input type="text" id="lname" class="form-control" />
-                  </div>
-                </div>
-
-                <div class="row form-group">
-                  <div class="col-md-12">
-                    <label class="text-black" for="email">Email</label>
-                    <input type="email" id="email" class="form-control" />
-                  </div>
-                </div>
-
-                <!-- <div class="row form-group">
-                  <div class="col-md-12">
-                    <label class="text-black" for="subject">Subject</label>
-                    <input type="subject" id="subject" class="form-control" />
-                  </div>
-                </div> -->
-
-                <div class="row form-group">
-                  <div class="col-md-12">
-                    <label class="text-black" for="message">Message</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="30"
-                      rows="7"
-                      class="form-control"
-                      placeholder="Write your notes or questions here..."></textarea>
-                  </div>
-                </div>
-
-                <div class="row form-group">
-                  <div class="col-md-12">
-                    <input
-                      type="submit"
-                      value="Send Message"
-                      class="btn btn-primary btn-md text-white" />
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <footer class="site-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9">
-              <div class="row">
-                <div class="col-md-5">
-                  <h2 class="footer-heading mb-4">About Us</h2>
-                  <p>
-                    We thrive on excellence, prioritizing client satisfaction
-                    and punctuality. Rest assured, we'll exceed expectations and
-                    deliver outstanding results, every time.
-                  </p>
-                </div>
-                <div class="col-md-3 ml-auto">
-                  <h2 class="footer-heading mb-4">Features</h2>
-                  <ul class="list-unstyled">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                  </ul>
-                </div>
-                <div class="col-md-3">
-                  <h2 class="footer-heading mb-4">Follow Us</h2>
-                  <a href="#" class="pl-0 pr-3"
-                    ><span class="icon-facebook"></span
-                  ></a>
-                  <a href="#" class="pl-3 pr-3"
-                    ><span class="icon-twitter"></span
-                  ></a>
-                  <a href="#" class="pl-3 pr-3"
-                    ><span class="icon-instagram"></span
-                  ></a>
-                  <a href="#" class="pl-3 pr-3"
-                    ><span class="icon-linkedin"></span
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
-              <form action="#" method="post" class="subcription-form">
-                <div class="input-group mb-3">
-                  <input
-                    type="text"
-                    class="form-control border-secondary text-white bg-transparent"
-                    placeholder="Enter Email"
-                    aria-label="Enter Email"
-                    aria-describedby="button-addon2" />
-                  <div class="input-group-append">
-                    <button
-                      class="btn btn-primary text-white"
-                      type="button"
-                      id="button-addon2">
-                      Send
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="row pt-5 mt-5 text-center">
-            <div class="col-md-12">
-              <div class="border-top pt-5">
-                <p>
-                  Copyright &copy;
-                  <script>
-                    document.write(new Date().getFullYear());
-                  </script>
-                  . All Rights Reserved. &mdash; Designed with love by
-                  <a href="https://wiretree.co.za">WIRE TREE</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+<body id="top">
+  <!-- header
+    ================================================== -->
+  <header class="s-header">
+    <div class="header-logo">
+      <a class="site-logo" href="index.html">
+        <img src="images/Logos/wire-tree-nobg.png" alt="Homepage" />
+      </a>
     </div>
-    <!-- .site-wrap -->
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/bootstrap-datepicker.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/jarallax.min.js"></script>
-    <script src="js/jarallax-element.min.js"></script>
-    <script src="js/lozad.min.js"></script>
-    <script src="js/modernizr.min.js"></script>
-    <script src="js/three.min.js"></script>
-    <script src="js/TweenMax.min.js"></script>
-    <script src="js/OBJLoader.js"></script>
-    <script src="js/ParticleHead.js"></script>
+    <nav class="header-nav">
+      <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
 
-    <script src="js/jquery.sticky.js"></script>
+      <div class="header-nav__content">
+        <h3>Navigation</h3>
 
-    <script src="js/typed.js"></script>
+        <ul class="header-nav__list">
+          <li class="current">
+            <a class="smoothscroll" href="#home" title="home">Home</a>
+          </li>
+          <li>
+            <a class="smoothscroll" href="#services" title="services">Services</a>
+          </li>
+          <li>
+            <a class="smoothscroll" href="#works" title="works">Works</a>
+          </li>
+          <li>
+            <a class="smoothscroll" href="#pricing" title="clients">Pricing</a>
+          </li>
+          <li>
+            <a class="smoothscroll" href="#contact" title="contact">Contact</a>
+          </li>
+        </ul>
+
+        <p>Follow us on Social Media</p>
+
+        <ul class="header-nav__social">
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61571783207627"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="disabled fa-brands fa-x-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="disabled fa fa-instagram"></i></a>
+          </li>
+          </li>
+        </ul>
+      </div>
+      <!-- end header-nav__content -->
+    </nav>
+    <!-- end header-nav -->
+
+    <a class="header-menu-toggle" href="#0">
+      <span class="header-menu-text">Menu</span>
+      <span class="header-menu-icon"></span>
+    </a>
+  </header>
+  <!-- end s-header -->
+
+  <!-- home
+    ================================================== -->
+  <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg"
+    data-natural-width="3000" data-natural-height="2000" data-position-y="center">
+    <div class="overlay"></div>
+    <div class="shadow-overlay"></div>
+
+    <div class="home-content">
+      <div class="row home-content__main">
+        <h3>Welcome to WireTree Digital</h3>
+
+        <h1 class="text-4xl md:text-6xl font-bold">
+          <span class="text-white">
+            We are a
+            <span class="text-transparent stroke-text-3">creative</span> group
+          </span>
+          <br />
+          <span class="text-white"> of people who </span>
+          <br />
+          <span class="text-transparent stroke-text-3">
+            design influential brands and digital
+          </span>
+          <br />
+          <span class="text-white"> experiences. </span>
+        </h1>
+
+        <style>
+          .stroke-text {
+            -webkit-text-stroke: 0.1px #50c878;
+            paint-order: stroke fill;
+          }
+
+          .stroke-text-2 {
+            -webkit-text-stroke: 0.1px #50c878;
+            paint-order: stroke fill;
+          }
+
+          .stroke-text-3 {
+            -webkit-text-stroke: 1.2px #50c878;
+            paint-order: stroke fill;
+          }
+
+          @media (max-width: 600px) {
+
+            .stroke-text,
+            .stroke-text-2 {
+              -webkit-text-stroke: 0.1px #50c878 !important;
+              paint-order: stroke fill;
+            }
+
+            .stroke-text-3 {
+              -webkit-text-stroke: .8px #50c878 !important;
+              paint-order: stroke fill;
+            }
+          }
+
+          /* Fallback for browsers that don't support text-stroke */
+          @supports not (-webkit-text-stroke: 2px #fff) {
+
+            .stroke-text,
+            .stroke-text-2,
+            .stroke-text-3 {
+              color: #fff;
+              text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+                1px 1px 0 #000;
+            }
+          }
+        </style>
+
+        <div class="home-content__buttons">
+          <a href="#contact" class="smoothscroll btn btn--stroke">
+            Start a Project
+          </a>
+          <a href="#about" class="smoothscroll btn btn--stroke">
+            More About Us
+          </a>
+        </div>
+      </div>
+
+      <div class="home-content__scroll">
+        <a href="#about" class="scroll-link smoothscroll">
+          <span>Scroll Down</span>
+        </a>
+      </div>
+
+      <div class="home-content__line"></div>
+    </div>
+    <!-- end home-content -->
+
+    <ul class="home-social">
+      <li>
+        <a href="https://www.facebook.com/profile.php?id=61571783207627"><i class="fa fa-facebook"
+            aria-hidden="true"></i><span>Facebook</span></a>
+      </li>
+      <li>
+        <a href="#0"><i class="disabled fa-brands fa-x-twitter"></i><span>X</span></a>
+      </li>
+      <li>
+        <a href="#0"><i class="disabled fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+      </li>
+      <!-- <li>
+          <a href="#0"
+            ><i class="fa fa-behance" aria-hidden="true"></i
+            ><span>Behance</span></a
+          >
+        </li> -->
+      <!-- <li>
+          <a href="#0"
+            ><i class="fa fa-dribbble" aria-hidden="true"></i
+            ><span>Dribbble</span></a
+          >
+        </li> -->
+    </ul>
+    <!-- end home-social -->
+  </section>
+  <!-- end s-home -->
+
+  <!-- services
+    ================================================== -->
+  <section id="services" class="s-services">
+    <div class="row section-header has-bottom-sep" data-aos="fade-up">
+      <div class="col-full">
+        <h3 class="subhead">What We Do</h3>
+        <h1 class="display-2">
+          We’ve got everything you need to<span class="text-transparent stroke-text-3">
+            launch and grow your businesses</span>
+          online presence.
+        </h1>
+      </div>
+    </div>
+    <!-- end section-header -->
+
+    <div class="row services-list block-1-2 block-tab-full">
+      <div class="col-block service-item" data-aos="fade-up">
+        <div class="service-icon">
+          <i class="icon-paint-brush"></i>
+        </div>
+        <div class="service-text">
+          <h3 class="h2">Brand Identity</h3>
+          <p>
+            Transform your brand with our identity services! We offer bespoke
+            logo design, tailored color palettes, unique typography, and
+            cohesive brand messaging. Let us create a distinctive and
+            memorable identity that resonates and stands out.
+            <a href="#contact">Contact us today!</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-block service-item" data-aos="fade-up">
+        <div class="service-icon">
+          <i class="icon-group"></i>
+        </div>
+        <div class="service-text">
+          <h3 class="h2">Illustration</h3>
+          <p>
+            Bring your ideas to life with our illustration services! From
+            custom illustrations to vibrant visuals, we craft unique art that
+            captures your vision and enhances your brand. Whether for print or
+            digital, our illustrations will make your message stand out.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-block service-item" data-aos="fade-up">
+        <div class="service-icon">
+          <i class="icon-megaphone"></i>
+        </div>
+        <div class="service-text">
+          <h3 class="h2">Marketing</h3>
+          <p>
+            Boost your brand with our expert marketing services! We offer
+            strategic planning, digital campaigns, social media management,
+            and more to drive engagement and growth. Let us help you reach
+            your audience effectively and elevate your business to new
+            heights.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-block service-item" data-aos="fade-up">
+        <div class="service-icon">
+          <i class="icon-earth"></i>
+        </div>
+        <div class="service-text">
+          <h3 class="h2">Web Design</h3>
+          <p>
+            Transform your online presence with our web design services! We
+            create stunning, user-friendly websites that reflect your brand
+            and engage visitors. From responsive design to seamless
+            navigation, we ensure your site stands out and performs flawlessly
+            on Mobile and Desktop.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-block service-item" data-aos="fade-up">
+        <div class="service-icon">
+          <i class="icon-cube"></i>
+        </div>
+        <div class="service-text">
+          <h3 class="h2">Packaging Design</h3>
+          <p>
+            Elevate your product with our packaging design services! We create
+            eye-catching, functional packaging that reflects your brand and
+            appeals to your target market. From concept to final design, we
+            ensure your packaging stands out and enhances customer experience.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-block service-item" data-aos="fade-up">
+        <div class="service-icon"><i class="icon-lego-block"></i></div>
+        <div class="service-text">
+          <h3 class="h2">Web Development</h3>
+          <p>
+            Transform your online presence with our web development services!
+            We build custom, high-performance websites tailored to your needs.
+            From robust functionality to seamless user experience, we deliver
+            solutions that drive engagement and growth.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end services-list -->
+  </section>
+  <!-- end s-services -->
+
+  <!-- works
+    ================================================== -->
+  <section id="works" class="s-works">
+    <div class="intro-wrap">
+      <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+        <div class="col-full">
+          <h3 class="subhead">Recent Works</h3>
+          <h1 class="display-2 display-2--light">
+            We <span class="text-transparent stroke-text-3">love</span> what
+            we do, check out some of our
+            <span class="text-transparent stroke-text-3">latest works</span>
+          </h1>
+        </div>
+      </div>
+      <!-- end section-header -->
+    </div>
+    <!-- end intro-wrap -->
+
+    <div class="works-content">
+      <div class="flex justify-center items-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <!-- Project 1: Beiramar -->
+          <div class="group" data-aos="fade-up">
+            <div
+              class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-green-500 duration-500 hover:border-green-200">
+              <div class="relative overflow-hidden h-64">
+                <img src="images/portfolio/gallery/beiramar.png" alt="Beiramar Luxury Apartments"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end p-6">
+                  <div class="text-white">
+                    <p class="text-sm mb-2">
+                      Luxury beachfront apartments in Cape Town
+                    </p>
+                    <div class="flex space-x-3">
+                      <a href="https://www.beiramar-blouberg.co.za/"
+                        class="inline-flex items-center px-4 py-2 bg-white text-gray-900 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors">
+                        <i class="fas fa-external-link-alt mr-2"></i>
+                        Visit Site
+                      </a>
+                      <a href="images/portfolio/gallery/beiramar.png"
+                        class="inline-flex items-center px-4 py-2 bg-green-600 text-white rounded-lg text-sm font-medium hover:bg-green-700 transition-colors">
+                        <i class="fas fa-expand mr-2"></i>
+                        View Larger
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-6">
+                <div class="flex items-start justify-between mb-3">
+                  <div>
+                    <a href="https://www.beiramar-blouberg.co.za/" class="group">
+                      <h3 class="text-xxl font-bold text-gray-900 group-hover:text-green-600 transition-colors">
+                        Beiramar Blouberg
+                      </h3>
+                    </a>
+                    <p class="text-green-600 text-lg font-medium mt-1">
+                      Website Development
+                    </p>
+                  </div>
+                  <a href="https://www.beiramar-blouberg.co.za/"
+                    class="text-gray-400 hover:text-green-600 transition-colors">
+                    <i class="fas fa-external-link-alt text-lg"></i>
+                  </a>
+                </div>
+
+                <p class="text-gray-600 text-xl leading-relaxed">
+                  Luxury beachfront apartment development offering stunning
+                  Table Mountain and sea views. Modern elegance meets
+                  breathtaking scenery in these upscale residences.
+                </p>
+
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <span class="px-3 py-1 bg-green-50 text-green-700 text-sm font-medium rounded-full">Luxury Real
+                    Estate</span>
+                  <span class="px-3 py-1 bg-green-50 text-green-700 text-sm font-medium rounded-full">Responsive
+                    Design</span>
+                  <span class="px-3 py-1 bg-green-50 text-green-700 text-sm font-medium rounded-full">Modern
+                    UI/UX</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end project -->
+
+          <!-- Project 2: Albus Waveside Villa -->
+          <div class="group" data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-green-500 hover:border-green-200">
+              <div class="relative overflow-hidden h-64">
+                <img src="images/portfolio/gallery/awv.jpg" alt="Albus Waveside Villa"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end p-6">
+                  <div class="text-white">
+                    <p class="text-sm mb-2">
+                      Exclusive property development in Sunset Beach
+                    </p>
+                    <div class="flex space-x-3">
+                      <a href="https://sunsetbeachalbus.co.za/"
+                        class="inline-flex items-center px-4 py-2 bg-white text-gray-900 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors">
+                        <i class="fas fa-external-link-alt mr-2"></i>
+                        Visit Site
+                      </a>
+                      <a href="images/portfolio/gallery/awv.jpg"
+                        class="inline-flex items-center px-4 py-2 bg-green-600 text-white rounded-lg text-sm font-medium hover:bg-green-700 transition-colors">
+                        <i class="fas fa-expand mr-2"></i>
+                        View Larger
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-6">
+                <div class="flex items-start justify-between mb-3">
+                  <div>
+                    <h3 class="text-xxl font-bold text-gray-900 group-hover:text-green-600 transition-colors">
+                      Albus Waveside Villa
+                    </h3>
+                    <p class="text-green-600 text-lg font-medium mt-1">
+                      Website Development
+                    </p>
+                  </div>
+                  <a href="https://sunsetbeachalbus.co.za/"
+                    class="text-gray-400 hover:text-green-600 transition-colors">
+                    <i class="fas fa-external-link-alt text-lg"></i>
+                  </a>
+                </div>
+
+                <p class="text-gray-600 text-xl leading-relaxed">
+                  Exclusive property development nestled in prestigious Sunset
+                  Beach, Cape Town. Features breathtaking sea views and
+                  picturesque scenes of Table Mountain.
+                </p>
+
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <span class="px-3 py-1 bg-green-50 text-green-700 text-sm font-medium rounded-full">Premium
+                    Development</span>
+                  <span class="px-3 py-1 bg-green-50 text-green-700 text-sm font-medium rounded-full">High-end
+                    Design</span>
+                  <span class="px-3 py-1 bg-green-50 text-green-700 text-sm font-medium rounded-full">Secure
+                    Location</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end project -->
+
+          <!-- Project 3: King David View -->
+          <div class="group" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-green-500 hover:border-green-200">
+              <div class="relative overflow-hidden h-64">
+                <img src="images/portfolio/gallery/kdv.jpeg" alt="King David View"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end p-6">
+                  <div class="text-white">
+                    <p class="text-sm mb-2">
+                      Affordable property development in prime location
+                    </p>
+                    <div class="flex space-x-3">
+                      <a href="https://www.kingdavidview.co.za/"
+                        class="inline-flex items-center px-4 py-2 bg-white text-gray-900 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors">
+                        <i class="fas fa-external-link-alt mr-2"></i>
+                        Visit Site
+                      </a>
+                      <a href="images/portfolio/gallery/kdv.jpeg"
+                        class="inline-flex items-center px-4 py-2 bg-green-600 text-white rounded-lg text-sm font-medium hover:bg-green-700 transition-colors">
+                        <i class="fas fa-expand mr-2"></i>
+                        View Larger
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-6">
+                <div class="flex items-start justify-between mb-3">
+                  <div>
+                    <h3 class="text-xxl font-bold text-gray-900 group-hover:text-green-600 transition-colors">
+                      King David View
+                    </h3>
+                    <p class="text-green-600 text-lg font-medium mt-1">
+                      Website Development
+                    </p>
+                  </div>
+                  <a href="https://www.kingdavidview.co.za/"
+                    class="text-gray-400 hover:text-green-600 transition-colors">
+                    <i class="fas fa-external-link-alt text-lg"></i>
+                  </a>
+                </div>
+
+                <p class="text-gray-600 text-xl leading-relaxed">
+                  Affordable property development designed with modern needs
+                  in mind. Located in a prime area close to all amenities and
+                  essential services.
+                </p>
+
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <span class="px-3 py-1 bg-green-50 text-green-700 text-sm font-medium rounded-full">Affordable
+                    Housing</span>
+                  <span class="px-3 py-1 bg-green-50 text-green-700 text-sm font-medium rounded-full">Prime
+                    Location</span>
+                  <span class="px-3 py-1 bg-green-50 text-green-700 text-sm font-medium rounded-full">Modern
+                    Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end project -->
+
+          <!-- Project 4: Custom Website Design -->
+          <div class="group" data-aos="fade-up">
+            <div
+              class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-green-500 hover:border-green-200">
+              <div class="relative overflow-hidden h-64">
+                <img src="https://images.pexels.com/photos/2085813/pexels-photo-2085813.jpeg"
+                  alt="Custom Website Design"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end p-6">
+                  <div class="text-white">
+                    <p class="text-sm mb-2">
+                      Custom website solutions for your business
+                    </p>
+                    <div class="flex space-x-3">
+                      <a href="#contact"
+                        class="inline-flex items-center px-4 py-2 bg-white text-gray-900 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors">
+                        <i class="fas fa-calendar mr-2"></i>
+                        Get Quote
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-6">
+                <div class="flex items-start justify-between mb-3">
+                  <div>
+                    <h3 class="text-xxl font-bold text-gray-900 group-hover:text-green-600 transition-colors">
+                      Custom Website Design
+                    </h3>
+                    <p class="text-green-600 text-lg font-medium mt-1">
+                      Website Development
+                    </p>
+                  </div>
+                  <a href="#contact" class="text-gray-400 hover:text-green-600 transition-colors">
+                    <i class="fas fa-arrow-right text-lg"></i>
+                  </a>
+                </div>
+
+                <p class="text-gray-600 text-xl leading-relaxed">
+                  Launch your website with us and enjoy free advertising!
+                  Custom solutions tailored to your business needs with modern
+                  design and functionality.
+                </p>
+
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <span class="px-3 py-1 bg-green-50 text-green-700 text-sm font-medium rounded-full">Custom
+                    Solutions</span>
+                  <span class="px-3 py-1 bg-green-50 text-green-700 text-sm font-medium rounded-full">Free
+                    Advertising</span>
+                  <span class="px-3 py-1 bg-green-50 text-green-700 text-sm font-medium rounded-full">Tailored
+                    Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end project -->
+        </div>
+      </div>
+    </div>
+    <!-- end works-content -->
+  </section>
+  <!-- end s-works -->
+
+<!-- PRICING SECTION -->
+    <section id="pricing" class="pricing-section">
+
+       <div class="intro-wrap">
+      <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+        <div class="col-full">
+          <h3 class="subhead">Pricing</h3>
+          <h1 class="display-2 display-2--light">
+            Choose the <span class="text-transparent stroke-text-3">package</span> that fits your 
+            <span class="text-transparent stroke-text-3">business</span>
+          </h1>
+        </div>
+      </div>
+      <!-- end section-header -->
+    </div>
+        <div class="pricing-container">
+
+            <!-- Starter -->
+            <div class="pricing-card">
+                <span class="badge text-lg">Starter</span>
+                <h3 class="text-white text-2xl">Launch-ready website</h3>
+                <div class="price">1,500</div>
+                <ul>
+                    <li>Up to 2–5 sections (single page)</li>
+                    <li>Mobile-responsive layout</li>
+                    <li>WhatsApp or email call-to-action</li>
+                    <li>Custom branded colours & fonts</li>
+                </ul>
+
+                <button class="btn-book"><a href="#contact">Book Starter deal</a></button>
+            </div>
+
+            <!-- Standard -->
+            <div class="pricing-card popular">
+                <span class="badge text-lg">Standard</span>
+                <span class="popular-tag">Most Popular</span>
+                <h3 class="text-white text-2xl">Business website</h3>
+                <div class="price">3,200</div>
+                <ul>
+                    <li>Up to 5 pages (Home, About, Services, Team, Contact)</li>
+                    <li>Mobile-first design</li>
+                    <li>Integrated contact form</li>
+                    <li>Basic on-page SEO structure</li>
+                    <li>Social media & WhatsApp links</li>
+                    <li>Custom branded colours & fonts</li>
+                    <li>1 round of refinements</li>
+                </ul>
+
+                <button class="btn-book"><a href="#contact">Book Standard deal</a></button>
+            </div>
+
+            <!-- Premium -->
+            <div class="pricing-card">
+                <span class="badge text-lg">Premium</span>
+                <h3 class="text-white text-2xl">High-impact website</h3>
+                <div class="price">6,500</div>
+                <ul>
+                    <li>Up to 6 pages</li>
+                    <li>Advanced layout & sections</li>
+                    <li>Portfolio / gallery section</li>
+                    <li>Lead-generation focused CTAs</li>
+                    <li>Custom branded colours & fonts</li>
+                    <li>1 concept + 2 rounds of refinements</li>
+                </ul>
+
+                <button class="btn-book"><a href="#contact">Book Premium deal</a></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <h2 class="text-white">Book the Standard Deal</h2>
+
+            <form action="https://formspree.io/f/mzzlkpwn" method="POST" class="modal-form">
+                <label class="text-white">Your Name</label>
+                <input type="text" name="name" required>
+
+                <label class="text-white">Your Email</label>
+                <input type="email" name="email" required>
+
+                <label class="text-white">Your Message</label>
+                <textarea class="text-white" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="modal-btn">Send Request</button>
+            </form>
+        </div>
+    </div>
+
     <script>
-      var typed = new Typed('.typed-words', {
-        strings: [' Digital', ' Design', 'Web Development'],
-        typeSpeed: 80,
-        backSpeed: 80,
-        backDelay: 4000,
-        startDelay: 1000,
-        loop: true,
-        showCursor: true,
-      });
+        const modal = document.getElementById("contactModal");
+        const openBtn = document.getElementById("openModal");
+        const closeBtn = document.querySelector(".close");
+
+        openBtn.onclick = () => {
+            modal.style.display = "flex";
+            document.body.style.overflow = "hidden"; // Prevent scrolling
+        };
+
+        closeBtn.onclick = () => {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; // Re-enable scrolling
+        };
+
+        window.onclick = (e) => {
+            if (e.target === modal) {
+                modal.style.display = "none";
+                document.body.style.overflow = "auto"; // Re-enable scrolling
+            }
+        };
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.style.display === 'flex') {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
     </script>
 
-    <script src="js/main.js"></script>
-  </body>
+  <!-- contact
+    ================================================== -->
+  <section id="contact" class="s-contact">
+    <div class="overlay"></div>
+    <div class="contact__line"></div>
+
+    <div class="row section-header" data-aos="fade-up">
+      <div class="col-full">
+        <h3 class="subhead">Contact Us</h3>
+        <h1 class="display-2 display-2--light">
+          Reach out for a
+          <span class="text-transparent stroke-text-3">new project</span> or
+          just say hello
+        </h1>
+      </div>
+    </div>
+
+    <div class="row contact-content" data-aos="fade-up">
+      <div class="contact-primary">
+        <h3 class="h6">Send Us A Message</h3>
+
+        <form id="contactForm" class="contactForm" novalidate>
+          <fieldset>
+            <div class="form-field">
+              <input name="name" type="text" placeholder="Your Name" required class="full-width" />
+            </div>
+
+            <div class="form-field">
+              <input name="email" type="email" placeholder="Your Email" required class="full-width" />
+            </div>
+
+            <!-- NEW: Web Development Services Dropdown -->
+            <div class="form-field">
+              <select name="service" class="full-width" required>
+                <option class="bg-black" value="">Select Service</option>
+                <option class="bg-black" value="Website Development">
+                  Website Development
+                </option>
+                <option class="bg-black" value="E-commerce Website">
+                  E-commerce Website
+                </option>
+                <option class="bg-black" value="Custom Web App">
+                  Custom Web Application
+                </option>
+                <option class="bg-black" value="System Integration">
+                  System Integration
+                </option>
+                <option class="bg-black" value="Maintenance & Support">
+                  Maintenance & Support
+                </option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <input name="subject" type="text" placeholder="Subject" class="full-width" />
+            </div>
+
+            <div class="form-field">
+              <textarea name="message" placeholder="Your Message" rows="10" required class="full-width"></textarea>
+            </div>
+
+            <div class="form-field">
+              <button type="submit" class="full-width btn--primary">
+                Submit
+              </button>
+
+              <div class="submit-loader hidden">
+                <div class="text-loader">Sending...</div>
+                <div class="s-loader">
+                  <div class="bounce1"></div>
+                  <div class="bounce2"></div>
+                  <div class="bounce3"></div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+
+      <!-- unchanged side info -->
+      <div class="contact-secondary">
+        <div class="contact-info">
+          <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
+
+          <div class="cinfo">
+            <h5>Location</h5>
+            <p>
+              Table View<br />
+              Cape Town, Western Cape,<br />
+              7441, SA
+            </p>
+          </div>
+
+          <div class="cinfo">
+            <h5>Email</h5>
+            <p>
+              <a href="mailto:info@wiretree-digital.co.za">info@wiretree-digital.co.za</a>
+            </p>
+          </div>
+
+          <div class="cinfo">
+            <h5>Call</h5>
+            <p>
+              Contact:
+              <a href="tel:0615851410">+27 61 585 1410</a>
+              <br />
+            </p>
+          </div>
+
+          <ul class="contact-social">
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61571783207627"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-x-twitter disabled"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram disabled"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- iOS Style Snackbar -->
+  <div id="snackbar"
+    class="hidden fixed bottom-10 left-1/2 -translate-x-1/2 px-8 py-6 rounded-lg text-white text-xl shadow-xl backdrop-blur-md transition-all duration-3000 z-[9999]">
+  </div>
+  <!-- end s-contact -->
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/27615851410" target="_blank"
+    class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 z-50">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+      <path
+        d="M20.52 3.48A11.8 11.8 0 0012.04 0C5.4 0 .04 5.36.04 12a11.8 11.8 0 001.66 6.07L0 24l6.17-1.62A12 12 0 0012.04 24c6.64 0 12-5.36 12-12a11.8 11.8 0 00-3.52-8.52zM12 22a9.9 9.9 0 01-5.06-1.42l-.36-.22-3.66.96.98-3.55-.24-.37A9.9 9.9 0 012 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm5.2-7.38c-.3-.15-1.77-.87-2.04-.96-.27-.09-.47-.15-.67.15-.2.3-.77.96-.95 1.16-.17.2-.35.23-.65.08-.3-.15-1.25-.46-2.38-1.48-.88-.77-1.47-1.72-1.64-2.01-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.38-.27.3-1.04 1.01-1.04 2.47 0 1.45 1.06 2.85 1.21 3.04.15.2 2.09 3.19 5.07 4.48.71.31 1.27.5 1.7.64.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.03-1.42.25-.7.25-1.3.17-1.42-.08-.12-.27-.2-.57-.35z" />
+    </svg>
+  </a>
+
+  <!-- footer
+    ================================================== -->
+  <footer>
+    <div class="row footer-main">
+      <div class="col-six tab-full left footer-desc">
+        <div class="footer-logo"></div>
+        We're like a cozy team of graphic and web designers, wrapped in years
+        of experience and warmth. Let's snug up and collaborate to showcase
+        your brand to the world. Our joy? Celebrating your success. We'll
+        craft your vision with care and snug attention to detail.
+      </div>
+
+      <div class="col-six tab-full right footer-subscribe">
+        <h4>Get Notified</h4>
+        <p>Send us your email address, and we'll contact you.</p>
+
+        <div class="subscribe-form">
+          <form id="mc-form" class="group" novalidate="true">
+            <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address"
+              required="" />
+            <input type="submit" name="subscribe" value="Submit" />
+            <label for="mc-email" class="subscribe-message"></label>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end footer-main -->
+
+    <div class="row footer-bottom">
+      <div class="col-twelve">
+        <div class="copyright">
+          <span>© All Rights Reserved</span>
+          <span>
+            <a href="https://www.wiretree-digital.co.za">
+              WireTree Digital <span id="year"></span>
+            </a>
+          </span>
+        </div>
+
+        <script>
+          document.getElementById('year').textContent =
+            new Date().getFullYear();
+        </script>
+
+        <div class="go-top">
+          <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- end footer-bottom -->
+  </footer>
+  <!-- end footer -->
+
+  <!-- photoswipe background
+    ================================================== -->
+  <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <div class="pswp__ui pswp__ui--hidden">
+        <div class="pswp__top-bar">
+          <div class="pswp__counter"></div>
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+          <button class="pswp__button pswp__button--share" title="Share"></button>
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end photoSwipe background -->
+
+  <!-- preloader
+    ================================================== -->
+  <div id="preloader">
+    <div id="loader">
+      <div class="line-scale-pulse-out">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Java Script
+    ================================================== -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
