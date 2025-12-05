@@ -1697,7 +1697,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     margin: 0;
     padding: 0;
     left: 40px;
-    top: 50%;
+    top: 80%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -1710,7 +1710,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     padding: 0;
     outline: 0;
     border: none;
-    width: 200px;
+    width: 100px;
+    height: 100px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
@@ -1983,7 +1984,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     padding: 0;
     outline: 0;
     border: none;
-    width: 120px;
+    width: 65px;
+    height: 100px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
@@ -3643,13 +3645,13 @@ footer .row {
 
 .footer-logo {
     display: block;
-    margin: -.6rem 0 3.6rem 0;
+    margin: -.9rem 0 3.6rem 0;
     padding: 0;
     outline: 0;
     border: none;
-    width: 85px;
+    width: 100px;
     height: 100px;
-    background: url("../images/Logos/wiretree-circle-logopng.png") no-repeat center;
+    background: url("../images/Logos/wire-tree-white.png") no-repeat center;
     background-size: cover;
     font: 0/0 a;
     text-shadow: none;
