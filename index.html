@@ -332,6 +332,7 @@
   <!-- works
     ================================================== -->
   <section id="works" class="s-works">
+    <div class="contact__line"></div>
     <div class="intro-wrap">
       <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
         <div class="col-full">
@@ -1077,80 +1078,205 @@
   </section>
   <!-- end s-works -->
 
+  <!-- Testimonials Start -->
+  <section id="services" class="s-services">
+    <div class="contact__line"></div>
+    <div class="row section-header has-bottom-sep" data-aos="fade-up">
+      <div class="col-full">
+        <h3 class="subhead">Testimonials</h3>
+        <h1 class="display-2">
+          Loved by<span class="text-transparent stroke-text-3">
+            Our Clients</span>
+        </h1>
+      </div>
+    </div>
+    <!-- Start-google-review-header -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12 ml-10 mr-10"
+      data-aos="fade-up">
+      <!-- Review 1 -->
+      <div
+        class="bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100 hover:shadow-xl hover:border-green-200 transition-all duration-300"
+        data-aos="fade-up">
+        <div class="flex items-center justify-between mb-4 md:mb-6">
+          <div class="flex text-yellow-400">
+            <i class="fas fa-star text-base md:text-lg"></i>
+            <i class="fas fa-star text-base md:text-lg"></i>
+            <i class="fas fa-star text-base md:text-lg"></i>
+            <i class="fas fa-star text-base md:text-lg"></i>
+            <i class="fas fa-star text-base md:text-lg"></i>
+          </div>
+          <span id="date-span" class="text-sm text-gray-600 font-medium">8 weeks ago</span>
+
+          <script>
+            const pastDate = new Date('2025-12-11');
+            const today = new Date();
+            const diffTime = Math.abs(today - pastDate);
+            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+            let text = '';
+            if (diffDays < 7) {
+              text = `${diffDays} day${diffDays > 1 ? 's' : ''} ago`;
+            } else {
+              const weeks = Math.floor(diffDays / 7);
+              text = `${weeks} week${weeks > 1 ? 's' : ''} ago`;
+            }
+
+            document.getElementById('date-span').textContent = text;
+          </script>
+        </div>
+        <p class="text-gray-700 mb-4 md:mb-6 text-base md:text-lg leading-relaxed">
+          Wiretree Digital delivered outstanding service to Tawcon Projects. Their professionalism, clear
+          communication, and quality work truly exceeded my expectations. I highly recommend them to anyone looking for
+          reliable and exceptional digital solutions.
+        </p>
+        <div class="flex items-center pt-4 border-t border-gray-100">
+          <div
+            class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-green-100 to-green-50 rounded-full flex items-center justify-center text-green-600 font-bold text-lg md:text-xl mr-4 border border-green-200">
+            TP
+          </div>
+          <div>
+            <p class="font-bold text-gray-900 text-lg md:text-xl">Tawanda</p>
+            <p class="text-sm md:text-base text-gray-600 mt-1">Tawcon Projects</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div
+        class="bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100 hover:shadow-xl hover:border-blue-200 transition-all duration-300"
+        data-aos="fade-up" data-aos-delay="100">
+        <div class="flex items-center justify-between mb-4 md:mb-6">
+          <div class="flex text-yellow-400">
+            <i class="fas fa-star text-base md:text-lg"></i>
+            <i class="fas fa-star text-base md:text-lg"></i>
+            <i class="fas fa-star text-base md:text-lg"></i>
+            <i class="fas fa-star text-base md:text-lg"></i>
+            <i class="fas fa-star text-base md:text-lg"></i>
+          </div>
+          <span class="text-sm text-gray-600 font-medium">1 month ago</span>
+        </div>
+        <p class="text-gray-700 mb-4 md:mb-6 text-base md:text-lg leading-relaxed">
+          The team at WireTree Digital completely upgraded the way we run our jobs. The Business operating system they
+          built is smooth,
+          reliable, and has streamlined our entire workflow. Their team was professional, responsive, and delivered far
+          beyond what we expected.
+        </p>
+        <div class="flex items-center pt-4 border-t border-gray-100">
+          <div
+            class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-blue-100 to-blue-50 rounded-full flex items-center justify-center text-blue-600 font-bold text-lg md:text-xl mr-4 border border-blue-200">
+            SB
+          </div>
+          <div>
+            <p class="font-bold text-gray-900 text-lg md:text-xl">Sarah Brown</p>
+            <p class="text-sm md:text-base text-gray-600 mt-1">Business Owner</p>
+          </div>
+        </div>
+      </div>
+      <!-- Review 3 -->
+      <div
+        class="bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100 hover:shadow-xl hover:border-blue-200 transition-all duration-300"
+        data-aos="fade-up" data-aos-delay="100">
+        <div class="flex items-center justify-between mb-4 md:mb-6">
+          <div class="flex text-yellow-400">
+            <i class="fas fa-star text-base md:text-lg"></i>
+            <i class="fas fa-star text-base md:text-lg"></i>
+            <i class="fas fa-star text-base md:text-lg"></i>
+            <i class="fas fa-star text-base md:text-lg"></i>
+            <i class="fas fa-star text-base md:text-lg"></i>
+          </div>
+          <span class="text-sm text-gray-600 font-medium">Today</span>
+        </div>
+        <p class="text-gray-700 mb-4 md:mb-6  text-base md:text-lg leading-relaxed">
+          Leave us a Review on Google!
+        </p>
+        <div class="flex items-center pt-4 border-t mt-10 border-gray-100">
+          <div class="text-center mt-5">
+            <a href="https://g.page/r/CdvDBSHZKCUpEAE/review" target="_blank"
+              class="inline-flex items-center bg-green-500 hover:bg-green-500 hover:text-white text-white font-medium py-3 px-6 rounded-lg transition-colors">
+              <i class="fab fa-google mr-2"></i>
+              Leave a Review on Google
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials End -->
+
   <!-- PRICING SECTION -->
-    <section id="pricing" class="pricing-section">
+  <section id="pricing" class="pricing-section">
 
-        <div class="intro-wrap">
-            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up" data-aos-delay="100">
-                <div class="col-full">
-                    <h3 class="subhead">Pricing</h3>
-                    <h1 class="display-2 display-2--light">
-                        Choose the <span class="text-transparent stroke-text-3">package</span> that fits your
-                        <span class="text-transparent stroke-text-3">business</span>
-                    </h1>
-                </div>
-            </div>
-            <!-- end section-header -->
+    <div class="intro-wrap">
+      <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-full">
+          <h3 class="subhead">Pricing</h3>
+          <h1 class="display-2 display-2--light">
+            Choose the <span class="text-transparent stroke-text-3">package</span> that fits your
+            <span class="text-transparent stroke-text-3">business</span>
+          </h1>
         </div>
-        <div class="pricing-container">
+      </div>
+      <!-- end section-header -->
+    </div>
+    <div class="pricing-container">
 
-            <!-- Starter -->
-            <div class="pricing-card" data-aos="fade-left" data-aos-delay="400">
-                <span class="badge bg-green-50 text-green-700 text-lg">STARTER</span>
-                <h3 class="text-white text-2xl">LAUNCH READY WEBSITE</h3>
-                <div class="price">1,500 <span class="text-sm">once-off</span></div>
-                <ul>
-                    <li>Up to 2–5 sections (single page)</li>
-                    <li>Mobile-responsive layout</li>
-                    <li>WhatsApp or email call-to-action</li>
-                    <li>Custom branded colours & fonts</li>
-                    <span class="text-sm mb-5 mt-5">T's & C's apply</span>
-                </ul>
+      <!-- Starter -->
+      <div class="pricing-card" data-aos="fade-left" data-aos-delay="400">
+        <span class="badge bg-green-50 text-green-700 text-lg">STARTER</span>
+        <h3 class="text-white text-2xl">LAUNCH READY WEBSITE</h3>
+        <div class="price">1,500 <span class="text-sm">once-off</span></div>
+        <ul>
+          <li>Up to 2–5 sections (single page)</li>
+          <li>Mobile-responsive layout</li>
+          <li>WhatsApp or email call-to-action</li>
+          <li>Custom branded colours & fonts</li>
+          <span class="text-sm mb-5 mt-5">T's & C's apply</span>
+        </ul>
 
 
 
-                <button class="btn-book"><a href="#contact">BOOK STARTER DEAL</a></button>
-            </div>
+        <button class="btn-book"><a href="#contact">BOOK STARTER DEAL</a></button>
+      </div>
 
-            <!-- Standard -->
-            <div class="pricing-card popular" data-aos="fade-up" data-aos-delay="200">
-                <span class="badge bg-green-50 text-green-700 text-lg">STANDARD</span>
-                <span class="popular-tag text-md">Most Popular</span>
-                <h3 class="text-white text-2xl">BUSINESS WEBSITE</h3>
-                <div class="price">3,200 <span class="text-sm">once-off</span></div>
-                <ul>
-                    <li>Up to 5 pages (Home, About, Services, Team, Contact)</li>
-                    <li>Mobile-first design</li>
-                    <li>Integrated contact form</li>
-                    <li>Basic on-page SEO structure</li>
-                    <li>Social media & WhatsApp links</li>
-                    <li>Custom branded colours & fonts</li>
-                    <li>1 round of refinements</li>
-                    <span class="text-sm mb-5 mt-5">T's & C's apply</span>
-                </ul>
+      <!-- Standard -->
+      <div class="pricing-card popular" data-aos="fade-up" data-aos-delay="200">
+        <span class="badge bg-green-50 text-green-700 text-lg">STANDARD</span>
+        <span class="popular-tag text-md">Most Popular</span>
+        <h3 class="text-white text-2xl">BUSINESS WEBSITE</h3>
+        <div class="price">3,200 <span class="text-sm">once-off</span></div>
+        <ul>
+          <li>Up to 5 pages (Home, About, Services, Team, Contact)</li>
+          <li>Mobile-first design</li>
+          <li>Integrated contact form</li>
+          <li>Basic on-page SEO structure</li>
+          <li>Social media & WhatsApp links</li>
+          <li>Custom branded colours & fonts</li>
+          <li>1 round of refinements</li>
+          <span class="text-sm mb-5 mt-5">T's & C's apply</span>
+        </ul>
 
-                <button class="btn-book"><a href="#contact">BOOK STANDARD DEAL</a></button>
-            </div>
+        <button class="btn-book"><a href="#contact">BOOK STANDARD DEAL</a></button>
+      </div>
 
-            <!-- Premium -->
-            <div class="pricing-card" data-aos="fade-right" data-aos-delay="400">
-                <span class="badge bg-green-50 text-green-700 text-lg">PREMIUM</span>
-                <h3 class="text-white text-2xl">HIGH IMPACT WEBSITE</h3>
-                <div class="price">6,500 <span class="text-sm">once-off</span></div>
-                <ul>
-                    <li>Up to 6 pages</li>
-                    <li>Advanced layout & sections</li>
-                    <li>Portfolio / gallery section</li>
-                    <li>Lead-generation focused CTAs</li>
-                    <li>Custom branded colours & fonts</li>
-                    <li>1 concept + 2 rounds of refinements</li>
-                    <span class="text-sm mb-5 mt-5">T's & C's apply</span>
-                </ul>
+      <!-- Premium -->
+      <div class="pricing-card" data-aos="fade-right" data-aos-delay="400">
+        <span class="badge bg-green-50 text-green-700 text-lg">PREMIUM</span>
+        <h3 class="text-white text-2xl">HIGH IMPACT WEBSITE</h3>
+        <div class="price">6,500 <span class="text-sm">once-off</span></div>
+        <ul>
+          <li>Up to 6 pages</li>
+          <li>Advanced layout & sections</li>
+          <li>Portfolio / gallery section</li>
+          <li>Lead-generation focused CTAs</li>
+          <li>Custom branded colours & fonts</li>
+          <li>1 concept + 2 rounds of refinements</li>
+          <span class="text-sm mb-5 mt-5">T's & C's apply</span>
+        </ul>
 
-                <button class="btn-book"><a href="#contact">BOOK PREMIUM DEAL</a></button>
-            </div>
-        </div>
-    </section>
+        <button class="btn-book"><a href="#contact">BOOK PREMIUM DEAL</a></button>
+      </div>
+    </div>
+  </section>
 
   <!-- MODAL -->
   <div id="contactModal" class="modal">
