@@ -45,35 +45,6 @@
 </head>
 
 <style>
-  .lead {
-        color: var(--muted);
-      }
-      .policy-card {
-        background: linear-gradient(
-          180deg,
-          rgba(255, 255, 255, 0.02),
-          rgba(255, 255, 255, 0.01)
-        );
-        border: 1px solid rgba(255, 255, 255, 0.03);
-        border-radius: 12px;
-        padding: 2rem;
-      }
-      .kicker {
-        color: var(--accent);
-        font-weight: 600;
-        font-size: 0.85rem;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
-      .h1 {
-        font-size: 2rem;
-        font-weight: 800;
-        color: #fff;
-        margin-bottom: 0.5rem;
-      }
-      .muted {
-        color: var(--muted);
-      }
   /* cookie banner */
       .cookie-banner {
         backdrop-filter: blur(6px) !important;
@@ -2109,26 +2080,24 @@
       "
     >
       <div class="flex items-start gap-4">
-        <div class="pt-8">
+        <div class="pt-1">
           <svg
-  xmlns="http://www.w3.org/2000/svg"
-  class="w-6 h-6"
-  fill="none"
-  viewBox="0 0 24 24"
-  stroke="currentColor"
->
-  <path
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    stroke-width="1.5"
-    d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z"
-  />
-</svg>
-
+            class="w-7 h-7 text-[var(--accent)]"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.6"
+              d="M3 7h18M3 12h18M3 17h18"
+            />
+          </svg>
         </div>
         <div class="text-sm">
-          <div class="text-white text-xl">We use cookies</div>
-          <div class="text-[var(--muted)] text-xl">
+          <div class="font-semibold text-white">We use cookies</div>
+          <div class="text-[var(--muted)]">
             We use essential cookies to make the site work. Analytics &
             marketing cookies will only be enabled with your consent.
           </div>
