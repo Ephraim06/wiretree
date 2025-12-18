@@ -44,6 +44,14 @@
   <script src="https://kit.fontawesome.com/00c02a5085.js" crossorigin="anonymous"></script>
 </head>
 
+<style>
+  /* cookie banner */
+      .cookie-banner {
+        backdrop-filter: blur(6px) !important;
+        -webkit-backdrop-filter: blur(6px) !important;
+      }
+</style>
+
 <body id="top">
   <!-- header
     ================================================== -->
@@ -1209,7 +1217,7 @@
     <div class="intro-wrap">
       <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up" data-aos-delay="100">
         <div class="col-full">
-          <h3 class="subhead">Pricing</h3>
+          <h3 class="subhead">Packages</h3>
           <h1 class="display-2 display-2--light">
             Choose the <span class="text-transparent stroke-text-3">package</span> that fits your
             <span class="text-transparent stroke-text-3">business</span>
@@ -1223,13 +1231,16 @@
       <!-- Starter -->
       <div class="pricing-card" data-aos="fade-left" data-aos-delay="400">
         <span class="badge bg-green-50 text-green-700 text-lg">STARTER</span>
-        <h3 class="text-white text-2xl">LAUNCH READY WEBSITE</h3>
-        <div class="price">1,500 <span class="text-sm">once-off</span></div>
+        <h2 class="text-white mt-10 mb-10">LAUNCH READY WEBSITE</h2>
         <ul>
-          <li>Up to 2–5 sections (single page)</li>
+          <li>Up to 2–5 sections <span class="text-lg">(single page)</span></li>
           <li>Mobile-responsive layout</li>
           <li>WhatsApp or email call-to-action</li>
           <li>Custom branded colours & fonts</li>
+          <li>Google Business setup</li>
+          <li>Website analytics setup</li>
+          <li>Website hosting</li>
+          <li>Business Domain <span class="text-lg">(upto 50 Email accounts)</span></li>
           <span class="text-sm mb-5 mt-5">T's & C's apply</span>
         </ul>
 
@@ -1242,16 +1253,18 @@
       <div class="pricing-card popular" data-aos="fade-up" data-aos-delay="200">
         <span class="badge bg-green-50 text-green-700 text-lg">STANDARD</span>
         <span class="popular-tag text-md">Most Popular</span>
-        <h3 class="text-white text-2xl">BUSINESS WEBSITE</h3>
-        <div class="price">3,200 <span class="text-sm">once-off</span></div>
+        <h2 class="text-white mt-10 mb-10">BUSINESS WEBSITE</h2>
         <ul>
-          <li>Up to 5 pages (Home, About, Services, Team, Contact)</li>
+          <li>Up to 4 pages <span class="text-lg">(Home, About, Services, Team)</span></li>
           <li>Mobile-first design</li>
           <li>Integrated contact form</li>
           <li>Basic on-page SEO structure</li>
           <li>Social media & WhatsApp links</li>
           <li>Custom branded colours & fonts</li>
-          <li>1 round of refinements</li>
+          <li>Google Business setup</li>
+          <li>Website analytics setup</li>
+          <li>Website hosting</li>
+          <li>Business Domain <span class="text-lg">(upto 50 Email accounts)</span></li>
           <span class="text-sm mb-5 mt-5">T's & C's apply</span>
         </ul>
 
@@ -1261,15 +1274,17 @@
       <!-- Premium -->
       <div class="pricing-card" data-aos="fade-right" data-aos-delay="400">
         <span class="badge bg-green-50 text-green-700 text-lg">PREMIUM</span>
-        <h3 class="text-white text-2xl">HIGH IMPACT WEBSITE</h3>
-        <div class="price">6,500 <span class="text-sm">once-off</span></div>
+        <h2 class="text-white mt-10 mb-10">HIGH IMPACT WEBSITE</h2>
         <ul>
           <li>Up to 6 pages</li>
           <li>Advanced layout & sections</li>
           <li>Portfolio / gallery section</li>
           <li>Lead-generation focused CTAs</li>
           <li>Custom branded colours & fonts</li>
-          <li>1 concept + 2 rounds of refinements</li>
+          <li>Google Business setup</li>
+          <li>Website analytics setup</li>
+          <li>Free Website hosting for 1 year</li>
+          <li>Business Domain <span class="text-lg">(upto 50 Email accounts)</span></li>
           <span class="text-sm mb-5 mt-5">T's & C's apply</span>
         </ul>
 
@@ -2050,6 +2065,125 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+
+   <!-- Cookie Banner (bottom) -->
+    <div
+      id="cookieBanner"
+      class="cookie-banner fixed bottom-6 left-1/2 -translate-x-1/2 z-50 hidden w-[92%] md:w-[680px] rounded-2xl px-5 py-4 flex items-center justify-between gap-4"
+      style="
+        background: linear-gradient(
+          180deg,
+          rgba(17, 17, 17, 0.95),
+          rgba(13, 13, 13, 0.95)
+        );
+        border: 1px solid rgba(255, 255, 255, 0.04);
+      "
+    >
+      <div class="flex items-start gap-4">
+        <div class="pt-1">
+          <svg
+            class="w-7 h-7 text-[var(--accent)]"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.6"
+              d="M3 7h18M3 12h18M3 17h18"
+            />
+          </svg>
+        </div>
+        <div class="text-sm">
+          <div class="font-semibold text-white">We use cookies</div>
+          <div class="text-[var(--muted)]">
+            We use essential cookies to make the site work. Analytics &
+            marketing cookies will only be enabled with your consent.
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <button
+          id="cookieReject"
+          class="px-4 py-2 rounded-full bg-transparent border border-white/6 text-white text-sm"
+        >
+          Reject
+        </button>
+        <button
+          id="cookieAccept"
+          class="px-4 py-2 rounded-full text-black bg-green-500 text-sm font-semibold shadow"
+        >
+          Accept
+        </button>
+      </div>
+    </div>
+
+    <script>
+      // Cookie consent (localStorage)
+      const COOKIE_KEY = 'wiretree_cookie_consent';
+
+      function setConsent(obj) {
+        localStorage.setItem(COOKIE_KEY, JSON.stringify(obj));
+        applyConsent(obj);
+      }
+
+      function getConsent() {
+        try {
+          return JSON.parse(localStorage.getItem(COOKIE_KEY));
+        } catch (e) {
+          return null;
+        }
+      }
+
+      function applyConsent(consent) {
+        // Example behaviour:
+        // - essential = always enabled
+        // - analytics = enable analytics only if consent.analytics true
+        // - marketing = enable marketing if consent.marketing true
+        if (!consent) {
+          // show banner
+          document.getElementById('cookieBanner').classList.remove('hidden');
+        } else {
+          // hide banner
+          document.getElementById('cookieBanner').classList.add('hidden');
+        }
+
+        // Here you'd conditionally run analytics scripts, e.g.:
+        // if (consent.analytics) initGoogleAnalytics();
+        // if (consent.marketing) initAdsRemarketing();
+        return;
+      }
+
+      document
+        .getElementById('cookieAccept')
+        .addEventListener('click', function () {
+          setConsent({
+            essential: true,
+            analytics: true,
+            marketing: true,
+            timestamp: Date.now(),
+          });
+        });
+
+      document
+        .getElementById('cookieReject')
+        .addEventListener('click', function () {
+          setConsent({
+            essential: true,
+            analytics: false,
+            marketing: false,
+            timestamp: Date.now(),
+          });
+        });
+
+      // Init on page load
+      (function () {
+        const consent = getConsent();
+        applyConsent(consent);
+      })();
+    </script>
 </body>
 
 </html>
