@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy & Legal - WireTree Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #000;
+        color: #fff;
+        overflow-x: hidden;
+        line-height: 1.6;
+      }
+
+      /* Policy page specific styles */
+      .policy-section {
+        @apply mb-10 scroll-mt-20;
+      }
+
+      .policy-heading {
+        @apply text-2xl md:text-3xl font-black tracking-tighter mb-4 text-blue-500;
+      }
+
+      .policy-subheading {
+        @apply text-xl font-bold mb-3 mt-6;
+      }
+
+      .policy-text {
+        @apply text-zinc-400 mb-4 leading-relaxed;
+      }
+
+      .policy-list {
+        @apply list-disc list-inside text-zinc-400 mb-4 space-y-2 ml-4;
+      }
+
+      .policy-list li {
+        @apply mb-2;
+      }
+
+      .policy-card {
+        @apply bg-zinc-900/30 rounded-2xl p-6 border border-zinc-800 hover:border-blue-500/20 transition-all;
+      }
+
+      .legal-badge {
+        @apply inline-flex items-center gap-2 px-3 py-1 bg-blue-600/20 rounded-full text-xs text-blue-500 font-medium;
+      }
+
+      /* Table of contents sticky */
+      .toc-sticky {
+        @apply sticky top-24;
+      }
+
+      .toc-link {
+        @apply block text-sm text-zinc-500 hover:text-white transition-colors py-1 border-l-2 border-zinc-800 pl-3 hover:border-blue-500;
+      }
+
+      .toc-link.active {
+        @apply text-blue-500 border-blue-500;
+      }
+
+      /* Last updated badge */
+      .last-updated {
+        @apply inline-block px-4 py-2 bg-zinc-900 rounded-full text-xs text-zinc-500 border border-zinc-800;
+      }
+    </style>
+  </head>
+  <body class="p-4">
+    <!-- Navigation -->
+    <nav
+      class="max-w-[1400px] mx-auto px-4 py-6 mb-8 flex flex-wrap gap-4 justify-between items-center">
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-tree text-blue-500 text-2xl"></i>
+        <span class="text-xl font-black tracking-tighter italic"
+          >WireTree<span class="text-blue-500">.</span></span
+        >
+      </div>
+      <div class="hidden md:flex items-center gap-8">
+        <a
+          href="#"
+          class="text-sm text-zinc-400 hover:text-white transition-colors"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="text-sm text-zinc-400 hover:text-white transition-colors"
+          >Services</a
+        >
+        <a
+          href="#"
+          class="text-sm text-zinc-400 hover:text-white transition-colors"
+          >Pricing</a
+        >
+        <a
+          href="#"
+          class="text-sm text-zinc-400 hover:text-white transition-colors"
+          >Portfolio</a
+        >
+        <a
+          href="#"
+          class="text-sm text-zinc-400 hover:text-white transition-colors"
+          >Contact</a
+        >
+      </div>
+      <a
+        href="#"
+        class="px-5 py-2 bg-blue-600 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-blue-700 transition-colors whitespace-nowrap">
+        Get a Quote
+      </a>
+    </nav>
+
+    <!-- Back to home link -->
+    <div class="max-w-[1400px] mx-auto px-4 mb-8">
+      <a
+        href="#"
+        class="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-white transition-colors">
+        <i class="fa-solid fa-arrow-left text-xs"></i>
+        Back to home page
+      </a>
+    </div>
+
+    <!-- Header -->
+    <div class="max-w-[1400px] mx-auto px-4 pt-8 pb-16">
+      <div
+        class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-8">
+        <div>
+          <p class="text-blue-500 font-bold tracking-[0.2em] text-xs mb-4">
+            PRIVACY & LEGAL
+          </p>
+          <h1
+            class="text-5xl md:text-6xl font-black tracking-tighter italic leading-[0.9] mb-4">
+            Privacy Policy
+          </h1>
+          <p class="text-zinc-400 text-lg max-w-2xl">
+            Wiretree Digital (Pty) Ltd — we respect your privacy and are
+            committed to protecting your personal information in line with
+            POPIA.
+          </p>
+        </div>
+        <div class="last-updated">
+          <i class="fa-regular fa-calendar mr-2"></i>Last updated: March 2026
+        </div>
+      </div>
+
+      <!-- Key message card -->
+      <div
+        class="bg-gradient-to-br from-blue-600/10 to-purple-600/10 rounded-2xl p-6 border border-blue-500/20 mb-12">
+        <div class="flex items-start gap-4">
+          <div
+            class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-shield-halved text-white text-xl"></i>
+          </div>
+          <div>
+            <p class="text-lg font-medium mb-2">
+              Our commitment to your privacy
+            </p>
+            <p class="text-zinc-400">
+              We collect only the information we need to provide and improve our
+              services. We respect your privacy, follow POPIA rules, and protect
+              your data using standard security measures. You can contact our
+              Data Protection contact at
+              <a
+                href="mailto:support@wiretree-digital.co.za"
+                class="text-blue-500 hover:underline"
+                >support@wiretree-digital.co.za</a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main content with table of contents -->
+    <div class="max-w-[1400px] mx-auto px-4 pb-24">
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
+        <!-- Table of Contents - Left sidebar -->
+        <div class="lg:col-span-1">
+          <div class="toc-sticky">
+            <p
+              class="text-xs font-bold uppercase tracking-widest text-zinc-600 mb-4">
+              ON THIS PAGE
+            </p>
+            <div class="space-y-1">
+              <a href="#introduction" class="toc-link"
+                >1. Introduction & definitions</a
+              >
+              <a href="#what-we-collect" class="toc-link"
+                >2. What we collect & why</a
+              >
+              <a href="#legal-basis" class="toc-link">3. Legal basis & POPIA</a>
+              <a href="#cookies" class="toc-link">4. Cookies & analytics</a>
+              <a href="#sharing" class="toc-link">5. Sharing & third parties</a>
+              <a href="#international" class="toc-link"
+                >6. International transfers</a
+              >
+              <a href="#retention" class="toc-link">7. How long we keep data</a>
+              <a href="#your-rights" class="toc-link">8. Your rights</a>
+              <a href="#security" class="toc-link">9. Security</a>
+              <a href="#children" class="toc-link">10. Children</a>
+              <a href="#changes" class="toc-link">11. Changes to this policy</a>
+              <a href="#contact" class="toc-link"
+                >12. Contact / Data Protection</a
+              >
+              <a href="#cookie-banner" class="toc-link"
+                >Cookie banner & consent</a
+              >
+              <a href="#terms" class="toc-link">Terms & Conditions</a>
+            </div>
+
+            <!-- Quick contact card -->
+            <div
+              class="mt-8 p-4 bg-zinc-900/50 rounded-xl border border-zinc-800">
+              <div class="flex items-center gap-3 mb-3">
+                <i class="fa-regular fa-envelope text-blue-500"></i>
+                <span class="text-sm font-medium">Data Protection queries</span>
+              </div>
+              <a
+                href="mailto:support@wiretree-digital.co.za"
+                class="text-xs text-zinc-400 hover:text-blue-500 transition-colors break-all">
+                support@wiretree-digital.co.za
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Policy Content - Right main area -->
+        <div class="lg:col-span-3">
+          <!-- Section 1 -->
+          <section id="introduction" class="policy-section">
+            <h2 class="policy-heading">1. Introduction & definitions</h2>
+            <div class="policy-card">
+              <p class="policy-text">
+                Wiretree Digital (Pty) Ltd ("Wiretree Digital", "we", "us")
+                operates www.wiretree-digital.co.za. This Privacy Policy
+                explains how we collect, use, store and share your personal
+                information (also called "Personal Information" or "PII") and
+                your rights under South African POPIA (Protection of Personal
+                Information Act 4 of 2013).
+              </p>
+              <p class="policy-subheading">Key terms</p>
+              <ul class="policy-list">
+                <li>
+                  <span class="text-white font-medium"
+                    >Personal Information (PII)</span
+                  >
+                  — any information that identifies you (name, email, phone, IP
+                  address, etc.).
+                </li>
+                <li>
+                  <span class="text-white font-medium">Processing</span> —
+                  collecting, storing, modifying, using, sharing or deleting
+                  PII.
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Section 2 -->
+          <section id="what-we-collect" class="policy-section">
+            <h2 class="policy-heading">2. What we collect & why</h2>
+            <div class="policy-card">
+              <p class="policy-text">
+                We collect the minimum PII necessary to: provide our services,
+                communicate with you, process transactions, respond to support
+                requests, and improve the website experience. Typical categories
+                include:
+              </p>
+              <ul class="policy-list">
+                <li>
+                  <span class="text-white font-medium">Contact info:</span>
+                  name, email, phone number (when provided).
+                </li>
+                <li>
+                  <span class="text-white font-medium"
+                    >Account / order info:</span
+                  >
+                  invoices, project details, billing data (only if you transact
+                  with us).
+                </li>
+                <li>
+                  <span class="text-white font-medium">Technical data:</span> IP
+                  address, browser, device, pages visited (for analytics and
+                  security).
+                </li>
+                <li>
+                  <span class="text-white font-medium">Communications:</span>
+                  emails and messages you send to us, or messages we send to you
+                  (support, newsletters if opted in).
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Section 3 -->
+          <section id="legal-basis" class="policy-section">
+            <h2 class="policy-heading">3. Legal basis & POPIA compliance</h2>
+            <div class="policy-card">
+              <p class="policy-text">
+                We process Personal Information under lawful grounds in POPIA,
+                including:
+              </p>
+              <ul class="policy-list">
+                <li>To perform a contract (deliver services you requested).</li>
+                <li>With your consent (marketing emails, newsletters).</li>
+                <li>
+                  To comply with legal obligations (billing, tax,
+                  recordkeeping).
+                </li>
+                <li>
+                  To pursue legitimate interests (site security, fraud
+                  prevention) balanced against your rights.
+                </li>
+              </ul>
+              <p class="policy-text mt-4">
+                We follow POPIA principles: lawfulness, purpose limitation,
+                minimality, accuracy, storage limitation,
+                integrity/confidentiality, and accountability.
+              </p>
+            </div>
+          </section>
+
+          <!-- Section 4 -->
+          <section id="cookies" class="policy-section">
+            <h2 class="policy-heading">4. How we use cookies & analytics</h2>
+            <div class="policy-card">
+              <p class="policy-text">
+                We use cookies and similar technologies for:
+              </p>
+              <ul class="policy-list">
+                <li>
+                  <span class="text-white">Functional needs</span> (sessions,
+                  form state).
+                </li>
+                <li>
+                  <span class="text-white">Analytics</span> (Google Analytics or
+                  similar) to understand site usage.
+                </li>
+                <li>
+                  <span class="text-white"
+                    >Optional marketing and remarketing tools</span
+                  >
+                  (only when you consent).
+                </li>
+              </ul>
+              <p class="policy-text">
+                You can manage cookie preferences using the cookie banner. We
+                never use cookies to expose or sell your personal data.
+              </p>
+            </div>
+          </section>
+
+          <!-- Section 5 -->
+          <section id="sharing" class="policy-section">
+            <h2 class="policy-heading">5. Sharing & third parties</h2>
+            <div class="policy-card">
+              <p class="policy-text">We only share PII with:</p>
+              <ul class="policy-list">
+                <li>
+                  <span class="text-white">Service providers</span> who help us
+                  run the site or provide services (hosting, email, payments).
+                  They act under our instruction and are contractually bound to
+                  protect your data.
+                </li>
+                <li>
+                  <span class="text-white">Legal or safety reasons:</span> when
+                  required by law, to protect rights, or to respond to lawful
+                  requests (court orders, subpoenas).
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Section 6 -->
+          <section id="international" class="policy-section">
+            <h2 class="policy-heading">6. International transfers</h2>
+            <div class="policy-card">
+              <p class="policy-text">
+                Some service providers may be located outside South Africa.
+                Where data is transferred internationally we ensure appropriate
+                safeguards are in place (standard contractual clauses or local
+                law compliance).
+              </p>
+            </div>
+          </section>
+
+          <!-- Section 7 -->
+          <section id="retention" class="policy-section">
+            <h2 class="policy-heading">7. How long we keep your data</h2>
+            <div class="policy-card">
+              <p class="policy-text">
+                We retain personal data only as long as necessary for the
+                purpose collected, or as required by law (e.g., tax records).
+                When no longer needed we securely delete or anonymise it.
+              </p>
+            </div>
+          </section>
+
+          <!-- Section 8 -->
+          <section id="your-rights" class="policy-section">
+            <h2 class="policy-heading">8. Your rights</h2>
+            <div class="policy-card">
+              <p class="policy-text">You may, where applicable:</p>
+              <ul class="policy-list">
+                <li>Request access to your personal data</li>
+                <li>Ask for rectification or update of incorrect data</li>
+                <li>
+                  Request deletion (right to be forgotten) where we have no
+                  lawful reason to retain data
+                </li>
+                <li>Object to processing (in certain circumstances)</li>
+                <li>
+                  Withdraw consent at any time (without affecting prior
+                  processing lawfully completed)
+                </li>
+              </ul>
+              <p class="policy-text mt-4">
+                To exercise these rights contact:
+                <a
+                  href="mailto:support@wiretree-digital.co.za"
+                  class="text-blue-500 hover:underline"
+                  >support@wiretree-digital.co.za</a
+                >. We'll respond within a reasonable time frame as required by
+                POPIA.
+              </p>
+            </div>
+          </section>
+
+          <!-- Section 9 -->
+          <section id="security" class="policy-section">
+            <h2 class="policy-heading">9. Security</h2>
+            <div class="policy-card">
+              <p class="policy-text">
+                We use reasonable technical and organisational measures to
+                protect data (TLS/HTTPS, access controls, encryption where
+                appropriate, maintained backups). No internet system is 100%
+                secure — we will notify affected users if a breach occurs that
+                materially affects their data.
+              </p>
+            </div>
+          </section>
+
+          <!-- Section 10 -->
+          <section id="children" class="policy-section">
+            <h2 class="policy-heading">10. Children</h2>
+            <div class="policy-card">
+              <p class="policy-text">
+                Our site is not directed at children under 13. We do not
+                knowingly collect personal data from children. If you believe we
+                have such data, contact us and we will take steps to delete it.
+              </p>
+            </div>
+          </section>
+
+          <!-- Section 11 -->
+          <section id="changes" class="policy-section">
+            <h2 class="policy-heading">11. Changes to this policy</h2>
+            <div class="policy-card">
+              <p class="policy-text">
+                We may update this policy occasionally. We'll post the date of
+                the last update at the top of the page. Continued use after
+                changes means you accept the revised policy.
+              </p>
+            </div>
+          </section>
+
+          <!-- Section 12 -->
+          <section id="contact" class="policy-section">
+            <h2 class="policy-heading">
+              12. Contact / Data Protection queries
+            </h2>
+            <div class="policy-card">
+              <p class="policy-text">
+                If you have questions or want to exercise your rights, email
+                <a
+                  href="mailto:support@wiretree-digital.co.za"
+                  class="text-blue-500 hover:underline"
+                  >support@wiretree-digital.co.za</a
+                >
+                or visit www.wiretree-digital.co.za.
+              </p>
+            </div>
+          </section>
+
+          <!-- Cookie Banner Section -->
+          <section id="cookie-banner" class="policy-section">
+            <h2 class="policy-heading">Cookie banner & consent</h2>
+            <div class="policy-card">
+              <p class="policy-text">
+                We show a cookie consent banner to collect your choices.
+                Essential cookies are required for the site to function.
+                Analytics and marketing cookies are only used after you agree.
+              </p>
+              <ul class="policy-list">
+                <li>
+                  <span class="text-white">Essential:</span> session, form
+                  state, security
+                </li>
+                <li>
+                  <span class="text-white">Analytics:</span> usage, pages
+                  visited (anonymous)
+                </li>
+                <li>
+                  <span class="text-white">Marketing:</span> remarketing and ads
+                  (only with consent)
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Terms Section -->
+          <section id="terms" class="policy-section">
+            <h2 class="policy-heading">Terms & Conditions</h2>
+            <div class="policy-card">
+              <p class="policy-text">
+                By using our site you agree to our Terms & Conditions which
+                govern the relationship between you and Wiretree Digital. These
+                include acceptable use, payment & refunds (if applicable), IP
+                ownership, and limitation of liability.
+              </p>
+              <p class="policy-text">
+                Full Terms & Conditions are available
+                <a href="#" class="text-blue-500 hover:underline">here</a>.
+              </p>
+            </div>
+          </section>
+
+          <!-- Company Footer within policy -->
+          <div
+            class="mt-16 pt-8 border-t border-zinc-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-zinc-600">
+            <div class="flex items-center gap-2">
+              <i class="fa-regular fa-copyright"></i>
+              <span>Wiretree Digital (Pty) Ltd</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-regular fa-envelope"></i>
+              <a
+                href="mailto:support@wiretree-digital.co.za"
+                class="hover:text-blue-500 transition-colors"
+                >support@wiretree-digital.co.za</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Links / Additional Resources -->
+    <div class="max-w-[1400px] mx-auto px-4 pb-24">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-zinc-900/30 rounded-xl p-6 border border-zinc-800">
+          <i class="fa-regular fa-file-lines text-2xl text-blue-500 mb-4"></i>
+          <h3 class="font-bold text-lg mb-2">Terms of Service</h3>
+          <p class="text-zinc-500 text-sm mb-4">
+            Our complete terms governing use of our services.
+          </p>
+          <a href="#" class="text-blue-500 text-sm hover:underline"
+            >Read Terms →</a
+          >
+        </div>
+        <div class="bg-zinc-900/30 rounded-xl p-6 border border-zinc-800">
+          <i class="fa-regular fa-cookie text-2xl text-blue-500 mb-4"></i>
+          <h3 class="font-bold text-lg mb-2">Cookie Preferences</h3>
+          <p class="text-zinc-500 text-sm mb-4">
+            Manage your cookie settings at any time.
+          </p>
+          <a href="#" class="text-blue-500 text-sm hover:underline"
+            >Manage Cookies →</a
+          >
+        </div>
+        <div class="bg-zinc-900/30 rounded-xl p-6 border border-zinc-800">
+          <i
+            class="fa-regular fa-circle-question text-2xl text-blue-500 mb-4"></i>
+          <h3 class="font-bold text-lg mb-2">Data Protection</h3>
+          <p class="text-zinc-500 text-sm mb-4">
+            Contact our Data Protection Officer.
+          </p>
+          <a
+            href="mailto:support@wiretree-digital.co.za"
+            class="text-blue-500 text-sm hover:underline"
+            >support@wiretree-digital.co.za</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="max-w-[1400px] mx-auto px-4 py-12 border-t border-zinc-900">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
+        <div class="col-span-2 md:col-span-1">
+          <div class="flex items-center gap-2 mb-3">
+            <i class="fa-solid fa-tree text-blue-500"></i>
+            <span class="font-black tracking-tighter text-sm"
+              >WireTree Digital</span
+            >
+          </div>
+          <p class="text-zinc-600 text-xs">
+            Affordable digital transformation for South African businesses.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-bold text-sm mb-3">Navigate</h4>
+          <ul class="space-y-1 text-xs text-zinc-600">
+            <li>
+              <a href="#" class="hover:text-white transition-colors">Home</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors">Pricing</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-sm mb-3">Legal</h4>
+          <ul class="space-y-1 text-xs text-zinc-600">
+            <li><a href="#" class="text-blue-500">Privacy Policy</a></li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors"
+                >Terms of Service</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors"
+                >Cookie Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-span-2 md:col-span-1">
+          <h4 class="font-bold text-sm mb-3">Contact</h4>
+          <ul class="space-y-1 text-xs text-zinc-600">
+            <li class="flex items-center gap-2">
+              <i class="fa-regular fa-envelope text-blue-500 text-[10px]"></i>
+              <a
+                href="mailto:support@wiretree-digital.co.za"
+                class="hover:text-white transition-colors"
+                >support@wiretree-digital.co.za</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="flex flex-col md:flex-row justify-between items-center gap-4 text-zinc-700 text-[10px]">
+        <span>© 2026 WireTree Digital (Pty) Ltd — All rights reserved</span>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-white transition-colors">Privacy</a>
+          <a href="#" class="hover:text-white transition-colors">Terms</a>
+          <a href="#" class="hover:text-white transition-colors">Cookies</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Smooth scroll for anchor links -->
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+            });
+          }
+        });
+      });
+
+      // Highlight active section in TOC
+      window.addEventListener('scroll', () => {
+        const sections = document.querySelectorAll('section');
+        const tocLinks = document.querySelectorAll('.toc-link');
+
+        let current = '';
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (window.scrollY >= sectionTop - 150) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        tocLinks.forEach((link) => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
