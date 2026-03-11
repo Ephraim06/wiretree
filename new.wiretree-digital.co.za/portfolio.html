@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - WireTree Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap');
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #000;
+        color: #fff;
+        overflow-x: hidden;
+      }
+
+      /* FIX 1: Proper grid with defined rows and consistent sizing */
+      .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: 140px; /* Reduced height to prevent overflow */
+        grid-auto-flow: dense;
+        gap: 16px;
+        padding: 16px;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      /* FIX 2: Mobile responsiveness */
+      @media (max-width: 768px) {
+        .portfolio-grid {
+          grid-template-columns: 1fr;
+          grid-auto-rows: auto;
+          gap: 20px;
+        }
+      }
+
+      /* FIX 3: Card styling with proper positioning */
+      .work-card {
+        @apply bg-[#111] rounded-[2rem] overflow-hidden relative flex flex-col transition-all duration-500;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        min-height: 0; /* Prevents flexbox overflow */
+        border-radius: 10px !important; /* Ensure consistent rounding */
+      }
+
+      .work-card:hover {
+        border-color: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+      }
+
+      /* FIX 4: Tag styling */
+      .tag {
+        @apply px-3 py-1.5 rounded-full bg-black/50 backdrop-blur-md text-[10px] font-bold uppercase tracking-widest text-white/90 inline-block w-fit;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      /* FIX 5: Image overlay */
+      .img-overlay {
+        @apply absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent;
+      }
+
+      /* FIX 6: Ensure content stays above overlay */
+      .work-card > *:not(img):not(.img-overlay) {
+        z-index: 2;
+        border-radius: 10px; /* Ensure content respects card rounding */
+      }
+
+      /* FIX 7: Fix for the white card at the bottom */
+      .work-card.bg-white {
+        background: white;
+        color: black;
+        border: none;
+      }
+      .work-card.bg-white:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 20px 30px -10px rgba(255, 255, 255, 0.1);
+      }
+    </style>
+  </head>
+  <body class="p-4">
+    <header
+      class="max-w-[1400px] mx-auto mb-12 mt-12 px-4 flex flex-col md:flex-row justify-between items-end gap-6 relative z-10"
+    >
+      <div>
+        <p class="text-green-500 font-bold tracking-[0.2em] text-xs mb-4">
+          SELECTED WORKS
+        </p>
+        <h1
+          class="text-7xl md:text-9xl font-black tracking-tighter italic leading-[0.8]"
+        >
+          Impact.
+        </h1>
+      </div>
+      <p class="text-zinc-500 text-sm max-w-[280px] leading-relaxed">
+        High-performance digital products for South African businesses.
+      </p>
+    </header>
+
+    <div class="portfolio-grid">
+      <!-- Card 1: Large feature card -->
+      <div
+        class="work-card col-span-12 md:col-span-8 row-span-3 group relative"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200"
+          class="absolute rounded-lg inset-0 w-full h-full object-cover"
+        />
+        <div class="img-overlay"></div>
+        <div class="relative h-full p-8 flex flex-col justify-between z-10">
+          <div class="flex gap-2 flex-wrap">
+            <span class="tag">Real Estate</span>
+            <span class="tag">Web Design</span>
+          </div>
+          <div>
+            <h2
+              class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter mb-4 leading-tight"
+            >
+              Beiramar<br />Blouberg
+            </h2>
+            <button
+              class="flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-white/90 hover:text-white transition-colors"
+            >
+              <a href="beiramar-blouberg.html"
+                >View Case Study <i class="fa-solid fa-arrow-right text-sm"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Industrial card -->
+      <div
+        class="work-card col-span-12 md:col-span-4 row-span-4 bg-zinc-900 group relative"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800"
+          class="absolute inset-0 w-full h-full object-cover opacity-40 grayscale group-hover:grayscale-0 group-hover:opacity-60 transition-all duration-700"
+        />
+        <div class="relative h-full p-8 flex flex-col z-10">
+          <span class="tag mb-auto w-fit">Industrial</span>
+          <div class="mt-auto">
+            <h2 class="text-3xl font-black tracking-tighter mb-4 leading-tight">
+              GreenVault<br />Electrical
+            </h2>
+            <p class="text-zinc-400 text-xs leading-relaxed mb-6 max-w-[90%]">
+              Optimized landing pages for technical service providers.
+            </p>
+            <div
+              class="w-12 h-12 rounded-full bg-white text-black flex items-center justify-center group-hover:scale-110 transition-transform"
+            >
+              <i class="fa-solid fa-bolt text-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Performance stats -->
+      <div
+        class="work-card col-span-12 md:col-span-4 row-span-2 bg-green-600 p-8 justify-center"
+      >
+        <div class="text-center md:text-left">
+          <p
+            class="text-green-200 text-[10px] font-bold tracking-widest uppercase mb-3"
+          >
+            Performance
+          </p>
+          <h2
+            class="text-5xl md:text-6xl font-black tracking-tighter text-white leading-none"
+          >
+            99+
+          </h2>
+          <p class="text-white/80 text-xs mt-3 max-w-[150px] mx-auto md:mx-0">
+            Average Lighthouse Speed Score
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 4: Custom Apps -->
+      <div
+        class="work-card col-span-12 md:col-span-4 row-span-2 group relative"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-[#1a1a1a] to-black"
+        ></div>
+        <div class="relative p-8 h-full flex flex-col justify-center z-10">
+          <h2 class="text-3xl font-black tracking-tighter mb-2 italic">
+            Custom Apps
+          </h2>
+          <div class="flex gap-1 mt-4">
+            <div class="w-full h-1.5 bg-zinc-800 rounded-full overflow-hidden">
+              <div class="w-2/3 h-full bg-green-500 rounded-full"></div>
+            </div>
+          </div>
+          <p
+            class="text-[10px] text-zinc-500 mt-3 uppercase tracking-widest font-medium"
+          >
+            Development Progress • 66%
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 5: CTA Card - Fixed white background -->
+      <div
+        class="work-card bg-white col-span-12 md:col-span-12 row-span-1 p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6"
+      >
+        <h2 class="text-3xl md:text-4xl font-black tracking-tighter text-black">
+          Ready to start?
+        </h2>
+        <a
+          href="mailto:hello@wiretree.co.za"
+          class="px-8 py-4 bg-black text-white rounded-full font-bold text-xs tracking-widest uppercase hover:bg-green-600 transition-all duration-300 whitespace-nowrap w-full md:w-auto text-center"
+        >
+          Get in touch
+        </a>
+      </div>
+    </div>
+
+    <footer
+      class="max-w-[1400px] mx-auto py-12 px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-zinc-700 text-[9px] font-bold tracking-[0.4em] uppercase"
+    >
+      <span>WireTree Digital</span>
+      <span>© 2026 Cape Town</span>
+    </footer>
+
+    <!-- FIX 8: Add missing closing tags and ensure proper stacking -->
+  </body>
+</html>
