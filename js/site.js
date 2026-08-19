@@ -12,6 +12,19 @@
   const form = qs('[data-project-form]');
   let lastFocus = null;
 
+  const captchaNote = message => {
+    const note = qs('[data-form-note]', form);
+    note.textContent = message;
+    note.classList.add('error');
+  };
+  window.wiretreeCaptchaSuccess = () => {
+    const note = qs('[data-form-note]', form);
+    note.textContent = 'Verified. Your project brief is ready to send.';
+    note.classList.remove('error');
+  };
+  window.wiretreeCaptchaExpired = () => captchaNote('Verification expired. Please confirm that you’re human again.');
+  window.wiretreeCaptchaError = () => captchaNote('Verification could not load. Check your connection and try again.');
+
   const setHeader = () => header.classList.toggle('scrolled', scrollY > 24);
   setHeader();
   addEventListener('scroll', setHeader, { passive: true });
@@ -98,6 +111,15 @@
   form.addEventListener('submit', async event => {
     event.preventDefault();
     if (!form.reportValidity()) return;
+    if (typeof window.grecaptcha === 'undefined') {
+      captchaNote('Verification is still loading. Please wait a moment and try again.');
+      return;
+    }
+    if (!grecaptcha.getResponse()) {
+      captchaNote('Please complete the “I’m not a robot” verification.');
+      qs('.recaptcha-wrap', form).scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
+      return;
+    }
     const button = qs('.submit-button', form);
     const note = qs('[data-form-note]', form);
     button.disabled = true;
@@ -108,9 +130,12 @@
       const response = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
       if (!response.ok) throw new Error('Submission failed');
       form.reset();
+      grecaptcha.reset();
       note.textContent = 'No sales pitch. Just a useful first conversation.';
+      document.dispatchEvent(new CustomEvent('wiretree:lead'));
       showResult(true);
     } catch (error) {
+      grecaptcha.reset();
       note.textContent = 'Could not send. Please try again or use WhatsApp.';
       note.classList.add('error');
       showResult(false);
